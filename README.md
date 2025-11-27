@@ -12,4 +12,4 @@ for simulation:
     install Visual Studio Code Addon: WaveTrace - optional if you want to view simulation results directly in VSCode
 
 
-Extract icarus iverilog directly in C:\!!!!
+Extract oss-cad-suite and icarus iverilog directly in C:\!!!!
