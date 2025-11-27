@@ -1,0 +1,2429 @@
+{
+  "creator": "Next Generation Place and Route (Version nextpnr-0.9-42-gcfa5f77d)",
+  "modules": {
+    "top": {
+      "settings": {
+        "route": "00000000000000000000000000000001",
+        "router/tmg_ripup": "0 ",
+        "router1/useEstimate": "1 ",
+        "router1/fullCleanupReroute": "1 ",
+        "router1/cleanupReroute": "1 ",
+        "router1/maxIterCnt": "200",
+        "place": "00000000000000000000000000000001",
+        "placer1/startTemp": "1.000000",
+        "placer1/minBelsForGridPick": "64",
+        "placer1/netShareWeight": "0.000000",
+        "placer1/constraintWeight": "10.000000",
+        "placerHeap/cellPlacementTimeout": "8",
+        "placerHeap/netShareWeight": "0.000000",
+        "placerHeap/parallelRefine": "0 ",
+        "pack": "00000000000000000000000000000001",
+        "synth": "00000000000000000000000000000001",
+        "placerHeap/timingWeight": "10 ",
+        "placerHeap/criticalityExponent": "2",
+        "placerHeap/beta": "0.900000",
+        "placerHeap/alpha": "0.100000",
+        "seed": "0011000101000001010110010010011001010011010110001001011110010011",
+        "arch.type": " ",
+        "arch.name": "ARCHNAME",
+        "router": "router1",
+        "placer": "heap",
+        "auto_freq": "00000000000000000000000000000000",
+        "slack_redist_iter": "00000000000000000000000000000000",
+        "timing_driven": "00000000000000000000000000000001",
+        "target_freq": "27000000.000000",
+        "cst.filename": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\io_tangnano9k.cst",
+        "packer.partno": "GW1NR-LV9QN88PC6/I5",
+        "packer.chipdb": "GW1N-9C",
+        "packer.arch": "himbaechel/gowin"
+      },
+      "attributes": {
+        "top": "00000000000000000000000000000001",
+        "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:8.1-28.10",
+        "dynports": "00000000000000000000000000000001"
+      },
+      "ports": {
+        "led": {
+          "direction": "output",
+          "bits": [ 7751, 7749, 7747, 7745, 7743, 7741 ]
+        },
+        "clk": {
+          "direction": "input",
+          "bits": [ 7606 ]
+        }
+      },
+      "cells": {
+        "counter_DFF_Q_passthrough_lut$": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "00000000000000001111111100000000"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000101",
+            "NEXTPNR_BEL": "X5Y17/LUT3"
+          },
+          "port_directions": {
+            "F": "output",
+            "I3": "input"
+          },
+          "connections": {
+            "F": [ 7794 ],
+            "I3": [ 7614 ]
+          }
+        },
+        "counter_DFF_Q_1_passthrough_lut$": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "00000000000000001111111100000000"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000101",
+            "NEXTPNR_BEL": "X4Y16/LUT3"
+          },
+          "port_directions": {
+            "F": "output",
+            "I3": "input"
+          },
+          "connections": {
+            "F": [ 7792 ],
+            "I3": [ 7618 ]
+          }
+        },
+        "counter_DFF_Q_17_passthrough_lut$": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "00000000000000001111111100000000"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000101",
+            "NEXTPNR_BEL": "X2Y16/LUT0"
+          },
+          "port_directions": {
+            "F": "output",
+            "I3": "input"
+          },
+          "connections": {
+            "F": [ 7790 ],
+            "I3": [ 7659 ]
+          }
+        },
+        "counter_DFF_Q_4_passthrough_lut$": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "00000000000000001111111100000000"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000101",
+            "NEXTPNR_BEL": "X4Y16/LUT5"
+          },
+          "port_directions": {
+            "F": "output",
+            "I3": "input"
+          },
+          "connections": {
+            "F": [ 7788 ],
+            "I3": [ 7708 ]
+          }
+        },
+        "counter_DFF_Q_8_passthrough_lut$": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "00000000000000001111111100000000"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000101",
+            "NEXTPNR_BEL": "X3Y16/LUT1"
+          },
+          "port_directions": {
+            "F": "output",
+            "I3": "input"
+          },
+          "connections": {
+            "F": [ 7786 ],
+            "I3": [ 7728 ]
+          }
+        },
+        "counter_DFF_Q_9_passthrough_lut$": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "00000000000000001111111100000000"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000101",
+            "NEXTPNR_BEL": "X3Y16/LUT0"
+          },
+          "port_directions": {
+            "F": "output",
+            "I3": "input"
+          },
+          "connections": {
+            "F": [ 7784 ],
+            "I3": [ 7733 ]
+          }
+        },
+        "counter_DFF_Q_D_ALU_SUM_DUMMY_ALULC": {
+          "hide_name": 0,
+          "type": "ALU",
+          "parameters": {
+            "ALU_MODE": "C2L"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X5Y17/ALU1"
+          },
+          "port_directions": {
+          },
+          "connections": {
+          }
+        },
+        "counter_DFF_Q_22_D_ALU_SUM_CIN_ALU_COUT_HEAD_ALULC": {
+          "hide_name": 0,
+          "type": "ALU",
+          "parameters": {
+            "ALU_MODE": "C2L"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X1Y17/ALU0"
+          },
+          "port_directions": {
+            "I2": "input",
+            "COUT": "output"
+          },
+          "connections": {
+            "I2": [ 7766 ],
+            "COUT": [ 7771 ]
+          }
+        },
+        "GSR": {
+          "hide_name": 0,
+          "type": "GSR",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X0Y0/GSR"
+          },
+          "port_directions": {
+            "GSRI": "input"
+          },
+          "connections": {
+            "GSRI": [ 7766 ]
+          }
+        },
+        "led_OBUF_O_4": {
+          "hide_name": 0,
+          "type": "OBUF",
+          "parameters": {
+            "NET_I": "NET",
+            "NET_O": "NET"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000101",
+            "NEXTPNR_BEL": "X0Y15/IOBB",
+            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:10.18-10.21",
+            "&DRIVE=8": "00000000000000000000000000000001",
+            "&IO_TYPE=LVCMOS18": "00000000000000000000000000000001",
+            "keep": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "O": "output",
+            "I": "input"
+          },
+          "connections": {
+            "O": [ 7749 ],
+            "I": [ 7704 ]
+          }
+        },
+        "led_OBUF_O_3": {
+          "hide_name": 0,
+          "type": "OBUF",
+          "parameters": {
+            "NET_I": "NET",
+            "NET_O": "NET"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000101",
+            "NEXTPNR_BEL": "X0Y20/IOBB",
+            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:10.18-10.21",
+            "&DRIVE=8": "00000000000000000000000000000001",
+            "&IO_TYPE=LVCMOS18": "00000000000000000000000000000001",
+            "keep": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "O": "output",
+            "I": "input"
+          },
+          "connections": {
+            "O": [ 7747 ],
+            "I": [ 7678 ]
+          }
+        },
+        "led_OBUF_O_2": {
+          "hide_name": 0,
+          "type": "OBUF",
+          "parameters": {
+            "NET_I": "NET",
+            "NET_O": "NET"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000101",
+            "NEXTPNR_BEL": "X0Y21/IOBB",
+            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:10.18-10.21",
+            "&DRIVE=8": "00000000000000000000000000000001",
+            "&IO_TYPE=LVCMOS18": "00000000000000000000000000000001",
+            "keep": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "O": "output",
+            "I": "input"
+          },
+          "connections": {
+            "O": [ 7745 ],
+            "I": [ 7619 ]
+          }
+        },
+        "led_OBUF_O_1": {
+          "hide_name": 0,
+          "type": "OBUF",
+          "parameters": {
+            "NET_I": "NET",
+            "NET_O": "NET"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000101",
+            "NEXTPNR_BEL": "X0Y24/IOBB",
+            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:10.18-10.21",
+            "&DRIVE=8": "00000000000000000000000000000001",
+            "&IO_TYPE=LVCMOS18": "00000000000000000000000000000001",
+            "keep": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "O": "output",
+            "I": "input"
+          },
+          "connections": {
+            "O": [ 7743 ],
+            "I": [ 7615 ]
+          }
+        },
+        "led_OBUF_O_5": {
+          "hide_name": 0,
+          "type": "OBUF",
+          "parameters": {
+            "NET_I": "NET",
+            "NET_O": "NET"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000101",
+            "NEXTPNR_BEL": "X0Y14/IOBA",
+            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:10.18-10.21",
+            "&DRIVE=8": "00000000000000000000000000000001",
+            "&IO_TYPE=LVCMOS18": "00000000000000000000000000000001",
+            "keep": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "O": "output",
+            "I": "input"
+          },
+          "connections": {
+            "O": [ 7751 ],
+            "I": [ 7709 ]
+          }
+        },
+        "$PACKER_GND_DRV": {
+          "hide_name": 1,
+          "type": "GOWIN_GND",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000010",
+            "NEXTPNR_BEL": "X0Y0/GND"
+          },
+          "port_directions": {
+            "G": "output"
+          },
+          "connections": {
+            "G": [ 7767 ]
+          }
+        },
+        "$PACKER_VCC_DRV": {
+          "hide_name": 1,
+          "type": "GOWIN_VCC",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X0Y0/VCC"
+          },
+          "port_directions": {
+            "V": "output"
+          },
+          "connections": {
+            "V": [ 7766 ]
+          }
+        },
+        "counter_DFF_Q_D_ALU_SUM": {
+          "hide_name": 0,
+          "type": "ALU",
+          "parameters": {
+            "RAW_ALU_LUT": "00000000000000001100000000111100",
+            "ALU_MODE": "00000000000000000000000000000010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X5Y17/ALU0",
+            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:22.20-22.34|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:57.7-63.5",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I2": "input",
+            "SUM": "output",
+            "I3": "input",
+            "I1": "input",
+            "I0": "input",
+            "COUT": "output",
+            "CIN": "input"
+          },
+          "connections": {
+            "I2": [ 7766 ],
+            "SUM": [ 7614 ],
+            "I3": [ 7766 ],
+            "I1": [ 7615 ],
+            "I0": [  ],
+            "COUT": [ 7737 ],
+            "CIN": [ 7675 ]
+          }
+        },
+        "counter_DFF_Q_9_D_ALU_SUM": {
+          "hide_name": 0,
+          "type": "ALU",
+          "parameters": {
+            "RAW_ALU_LUT": "00000000000000001100000000111100",
+            "ALU_MODE": "00000000000000000000000000000010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X3Y17/ALU3",
+            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:22.20-22.34|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:57.7-63.5",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I2": "input",
+            "SUM": "output",
+            "I3": "input",
+            "I1": "input",
+            "I0": "input",
+            "COUT": "output",
+            "CIN": "input"
+          },
+          "connections": {
+            "I2": [ 7766 ],
+            "SUM": [ 7733 ],
+            "I3": [ 7766 ],
+            "I1": [ 7734 ],
+            "I0": [  ],
+            "COUT": [ 7731 ],
+            "CIN": [ 7625 ]
+          }
+        },
+        "counter_DFF_Q_9": {
+          "hide_name": 0,
+          "type": "DFF",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X3Y16/DFF0",
+            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:21.5-23.8|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:13.6-13.47",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "Q": "output",
+            "D": "input",
+            "CLK": "input"
+          },
+          "connections": {
+            "Q": [ 7734 ],
+            "D": [ 7784 ],
+            "CLK": [ 7611 ]
+          }
+        },
+        "counter_DFF_Q_8_D_ALU_SUM": {
+          "hide_name": 0,
+          "type": "ALU",
+          "parameters": {
+            "RAW_ALU_LUT": "00000000000000001100000000111100",
+            "ALU_MODE": "00000000000000000000000000000010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X3Y17/ALU4",
+            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:22.20-22.34|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:57.7-63.5",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I2": "input",
+            "SUM": "output",
+            "I3": "input",
+            "I1": "input",
+            "I0": "input",
+            "COUT": "output",
+            "CIN": "input"
+          },
+          "connections": {
+            "I2": [ 7766 ],
+            "SUM": [ 7728 ],
+            "I3": [ 7766 ],
+            "I1": [ 7729 ],
+            "I0": [  ],
+            "COUT": [ 7726 ],
+            "CIN": [ 7731 ]
+          }
+        },
+        "counter_DFF_Q_8": {
+          "hide_name": 0,
+          "type": "DFF",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X3Y16/DFF1",
+            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:21.5-23.8|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:13.6-13.47",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "Q": "output",
+            "D": "input",
+            "CLK": "input"
+          },
+          "connections": {
+            "Q": [ 7729 ],
+            "D": [ 7786 ],
+            "CLK": [ 7611 ]
+          }
+        },
+        "counter_DFF_Q_7_D_ALU_SUM": {
+          "hide_name": 0,
+          "type": "ALU",
+          "parameters": {
+            "RAW_ALU_LUT": "00000000000000001100000000111100",
+            "ALU_MODE": "00000000000000000000000000000010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X3Y17/ALU5",
+            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:22.20-22.34|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:57.7-63.5",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I2": "input",
+            "SUM": "output",
+            "I3": "input",
+            "I1": "input",
+            "I0": "input",
+            "COUT": "output",
+            "CIN": "input"
+          },
+          "connections": {
+            "I2": [ 7766 ],
+            "SUM": [ 7723 ],
+            "I3": [ 7766 ],
+            "I1": [ 7724 ],
+            "I0": [  ],
+            "COUT": [ 7721 ],
+            "CIN": [ 7726 ]
+          }
+        },
+        "counter_DFF_Q_7": {
+          "hide_name": 0,
+          "type": "DFF",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X3Y17/DFF5",
+            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:21.5-23.8|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:13.6-13.47",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "Q": "output",
+            "D": "input",
+            "CLK": "input"
+          },
+          "connections": {
+            "Q": [ 7724 ],
+            "D": [ 7723 ],
+            "CLK": [ 7611 ]
+          }
+        },
+        "counter_DFF_Q_6_D_ALU_SUM": {
+          "hide_name": 0,
+          "type": "ALU",
+          "parameters": {
+            "RAW_ALU_LUT": "00000000000000001100000000111100",
+            "ALU_MODE": "00000000000000000000000000000010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X4Y17/ALU0",
+            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:22.20-22.34|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:57.7-63.5",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I2": "input",
+            "SUM": "output",
+            "I3": "input",
+            "I1": "input",
+            "I0": "input",
+            "COUT": "output",
+            "CIN": "input"
+          },
+          "connections": {
+            "I2": [ 7766 ],
+            "SUM": [ 7718 ],
+            "I3": [ 7766 ],
+            "I1": [ 7719 ],
+            "I0": [  ],
+            "COUT": [ 7716 ],
+            "CIN": [ 7721 ]
+          }
+        },
+        "counter_DFF_Q_6": {
+          "hide_name": 0,
+          "type": "DFF",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X4Y17/DFF0",
+            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:21.5-23.8|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:13.6-13.47",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "Q": "output",
+            "D": "input",
+            "CLK": "input"
+          },
+          "connections": {
+            "Q": [ 7719 ],
+            "D": [ 7718 ],
+            "CLK": [ 7611 ]
+          }
+        },
+        "counter_DFF_Q_5_D_ALU_SUM": {
+          "hide_name": 0,
+          "type": "ALU",
+          "parameters": {
+            "RAW_ALU_LUT": "00000000000000001100000000111100",
+            "ALU_MODE": "00000000000000000000000000000010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X4Y17/ALU1",
+            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:22.20-22.34|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:57.7-63.5",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I2": "input",
+            "SUM": "output",
+            "I3": "input",
+            "I1": "input",
+            "I0": "input",
+            "COUT": "output",
+            "CIN": "input"
+          },
+          "connections": {
+            "I2": [ 7766 ],
+            "SUM": [ 7713 ],
+            "I3": [ 7766 ],
+            "I1": [ 7714 ],
+            "I0": [  ],
+            "COUT": [ 7711 ],
+            "CIN": [ 7716 ]
+          }
+        },
+        "counter_DFF_Q_5": {
+          "hide_name": 0,
+          "type": "DFF",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X4Y17/DFF1",
+            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:21.5-23.8|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:13.6-13.47",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "Q": "output",
+            "D": "input",
+            "CLK": "input"
+          },
+          "connections": {
+            "Q": [ 7714 ],
+            "D": [ 7713 ],
+            "CLK": [ 7611 ]
+          }
+        },
+        "counter_DFF_Q_4_D_ALU_SUM": {
+          "hide_name": 0,
+          "type": "ALU",
+          "parameters": {
+            "RAW_ALU_LUT": "00000000000000001100000000111100",
+            "ALU_MODE": "00000000000000000000000000000010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X4Y17/ALU2",
+            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:22.20-22.34|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:57.7-63.5",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I2": "input",
+            "SUM": "output",
+            "I3": "input",
+            "I1": "input",
+            "I0": "input",
+            "COUT": "output",
+            "CIN": "input"
+          },
+          "connections": {
+            "I2": [ 7766 ],
+            "SUM": [ 7708 ],
+            "I3": [ 7766 ],
+            "I1": [ 7709 ],
+            "I0": [  ],
+            "COUT": [ 7706 ],
+            "CIN": [ 7711 ]
+          }
+        },
+        "counter_DFF_Q_4": {
+          "hide_name": 0,
+          "type": "DFF",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X4Y16/DFF5",
+            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:21.5-23.8|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:13.6-13.47",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "Q": "output",
+            "D": "input",
+            "CLK": "input"
+          },
+          "connections": {
+            "Q": [ 7709 ],
+            "D": [ 7788 ],
+            "CLK": [ 7611 ]
+          }
+        },
+        "counter_DFF_Q_3_D_ALU_SUM": {
+          "hide_name": 0,
+          "type": "ALU",
+          "parameters": {
+            "RAW_ALU_LUT": "00000000000000001100000000111100",
+            "ALU_MODE": "00000000000000000000000000000010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X4Y17/ALU3",
+            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:22.20-22.34|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:57.7-63.5",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I2": "input",
+            "SUM": "output",
+            "I3": "input",
+            "I1": "input",
+            "I0": "input",
+            "COUT": "output",
+            "CIN": "input"
+          },
+          "connections": {
+            "I2": [ 7766 ],
+            "SUM": [ 7703 ],
+            "I3": [ 7766 ],
+            "I1": [ 7704 ],
+            "I0": [  ],
+            "COUT": [ 7701 ],
+            "CIN": [ 7706 ]
+          }
+        },
+        "counter_DFF_Q_3": {
+          "hide_name": 0,
+          "type": "DFF",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X4Y17/DFF3",
+            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:21.5-23.8|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:13.6-13.47",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "Q": "output",
+            "D": "input",
+            "CLK": "input"
+          },
+          "connections": {
+            "Q": [ 7704 ],
+            "D": [ 7703 ],
+            "CLK": [ 7611 ]
+          }
+        },
+        "counter_DFF_Q_2_D_ALU_SUM": {
+          "hide_name": 0,
+          "type": "ALU",
+          "parameters": {
+            "RAW_ALU_LUT": "00000000000000001100000000111100",
+            "ALU_MODE": "00000000000000000000000000000010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X4Y17/ALU4",
+            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:22.20-22.34|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:57.7-63.5",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I2": "input",
+            "SUM": "output",
+            "I3": "input",
+            "I1": "input",
+            "I0": "input",
+            "COUT": "output",
+            "CIN": "input"
+          },
+          "connections": {
+            "I2": [ 7766 ],
+            "SUM": [ 7677 ],
+            "I3": [ 7766 ],
+            "I1": [ 7678 ],
+            "I0": [  ],
+            "COUT": [ 7674 ],
+            "CIN": [ 7701 ]
+          }
+        },
+        "counter_DFF_Q_23_D_LUT1_F": {
+          "hide_name": 0,
+          "type": "LUT1",
+          "parameters": {
+            "INIT": "01"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X1Y16/LUT0",
+            "src": "c:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:135.23-136.15",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I0": "input",
+            "F": "output"
+          },
+          "connections": {
+            "I0": [ 7695 ],
+            "F": [ 7698 ]
+          }
+        },
+        "counter_DFF_Q_23": {
+          "hide_name": 0,
+          "type": "DFF",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X1Y16/DFF0",
+            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:21.5-23.8|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:13.6-13.47",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "Q": "output",
+            "D": "input",
+            "CLK": "input"
+          },
+          "connections": {
+            "Q": [ 7695 ],
+            "D": [ 7698 ],
+            "CLK": [ 7611 ]
+          }
+        },
+        "counter_DFF_Q_22_D_ALU_SUM_CIN_ALU_COUT": {
+          "hide_name": 0,
+          "type": "ALU",
+          "parameters": {
+            "RAW_ALU_LUT": "00000000000000000011000011001111",
+            "ALU_MODE": "00000000000000000000000000000010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X1Y17/ALU1",
+            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:22.20-22.34|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:57.7-63.5",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I2": "input",
+            "SUM": "output",
+            "I3": "input",
+            "I1": "input",
+            "I0": "input",
+            "COUT": "output",
+            "CIN": "input"
+          },
+          "connections": {
+            "I2": [ 7766 ],
+            "SUM": [ 7696 ],
+            "I3": [ 7766 ],
+            "I1": [ 7695 ],
+            "I0": [  ],
+            "COUT": [ 7693 ],
+            "CIN": [ 7771 ]
+          }
+        },
+        "counter_DFF_Q_22_D_ALU_SUM": {
+          "hide_name": 0,
+          "type": "ALU",
+          "parameters": {
+            "RAW_ALU_LUT": "00000000000000001100000000111100",
+            "ALU_MODE": "00000000000000000000000000000010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X1Y17/ALU2",
+            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:22.20-22.34|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:57.7-63.5",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I2": "input",
+            "SUM": "output",
+            "I3": "input",
+            "I1": "input",
+            "I0": "input",
+            "COUT": "output",
+            "CIN": "input"
+          },
+          "connections": {
+            "I2": [ 7766 ],
+            "SUM": [ 7690 ],
+            "I3": [ 7766 ],
+            "I1": [ 7691 ],
+            "I0": [  ],
+            "COUT": [ 7688 ],
+            "CIN": [ 7693 ]
+          }
+        },
+        "counter_DFF_Q_22": {
+          "hide_name": 0,
+          "type": "DFF",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X1Y17/DFF2",
+            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:21.5-23.8|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:13.6-13.47",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "Q": "output",
+            "D": "input",
+            "CLK": "input"
+          },
+          "connections": {
+            "Q": [ 7691 ],
+            "D": [ 7690 ],
+            "CLK": [ 7611 ]
+          }
+        },
+        "counter_DFF_Q_21_D_ALU_SUM": {
+          "hide_name": 0,
+          "type": "ALU",
+          "parameters": {
+            "RAW_ALU_LUT": "00000000000000001100000000111100",
+            "ALU_MODE": "00000000000000000000000000000010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X1Y17/ALU3",
+            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:22.20-22.34|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:57.7-63.5",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I2": "input",
+            "SUM": "output",
+            "I3": "input",
+            "I1": "input",
+            "I0": "input",
+            "COUT": "output",
+            "CIN": "input"
+          },
+          "connections": {
+            "I2": [ 7766 ],
+            "SUM": [ 7685 ],
+            "I3": [ 7766 ],
+            "I1": [ 7686 ],
+            "I0": [  ],
+            "COUT": [ 7683 ],
+            "CIN": [ 7688 ]
+          }
+        },
+        "counter_DFF_Q_21": {
+          "hide_name": 0,
+          "type": "DFF",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X1Y17/DFF3",
+            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:21.5-23.8|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:13.6-13.47",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "Q": "output",
+            "D": "input",
+            "CLK": "input"
+          },
+          "connections": {
+            "Q": [ 7686 ],
+            "D": [ 7685 ],
+            "CLK": [ 7611 ]
+          }
+        },
+        "counter_DFF_Q_20_D_ALU_SUM": {
+          "hide_name": 0,
+          "type": "ALU",
+          "parameters": {
+            "RAW_ALU_LUT": "00000000000000001100000000111100",
+            "ALU_MODE": "00000000000000000000000000000010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X1Y17/ALU4",
+            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:22.20-22.34|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:57.7-63.5",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I2": "input",
+            "SUM": "output",
+            "I3": "input",
+            "I1": "input",
+            "I0": "input",
+            "COUT": "output",
+            "CIN": "input"
+          },
+          "connections": {
+            "I2": [ 7766 ],
+            "SUM": [ 7680 ],
+            "I3": [ 7766 ],
+            "I1": [ 7681 ],
+            "I0": [  ],
+            "COUT": [ 7672 ],
+            "CIN": [ 7683 ]
+          }
+        },
+        "counter_DFF_Q_20": {
+          "hide_name": 0,
+          "type": "DFF",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X1Y17/DFF4",
+            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:21.5-23.8|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:13.6-13.47",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "Q": "output",
+            "D": "input",
+            "CLK": "input"
+          },
+          "connections": {
+            "Q": [ 7681 ],
+            "D": [ 7680 ],
+            "CLK": [ 7611 ]
+          }
+        },
+        "counter_DFF_Q_2": {
+          "hide_name": 0,
+          "type": "DFF",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X4Y17/DFF4",
+            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:21.5-23.8|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:13.6-13.47",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "Q": "output",
+            "D": "input",
+            "CLK": "input"
+          },
+          "connections": {
+            "Q": [ 7678 ],
+            "D": [ 7677 ],
+            "CLK": [ 7611 ]
+          }
+        },
+        "counter_DFF_Q_1_D_ALU_SUM": {
+          "hide_name": 0,
+          "type": "ALU",
+          "parameters": {
+            "RAW_ALU_LUT": "00000000000000001100000000111100",
+            "ALU_MODE": "00000000000000000000000000000010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X4Y17/ALU5",
+            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:22.20-22.34|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:57.7-63.5",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I2": "input",
+            "SUM": "output",
+            "I3": "input",
+            "I1": "input",
+            "I0": "input",
+            "COUT": "output",
+            "CIN": "input"
+          },
+          "connections": {
+            "I2": [ 7766 ],
+            "SUM": [ 7618 ],
+            "I3": [ 7766 ],
+            "I1": [ 7619 ],
+            "I0": [  ],
+            "COUT": [ 7675 ],
+            "CIN": [ 7674 ]
+          }
+        },
+        "counter_DFF_Q_19_D_ALU_SUM": {
+          "hide_name": 0,
+          "type": "ALU",
+          "parameters": {
+            "RAW_ALU_LUT": "00000000000000001100000000111100",
+            "ALU_MODE": "00000000000000000000000000000010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X1Y17/ALU5",
+            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:22.20-22.34|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:57.7-63.5",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I2": "input",
+            "SUM": "output",
+            "I3": "input",
+            "I1": "input",
+            "I0": "input",
+            "COUT": "output",
+            "CIN": "input"
+          },
+          "connections": {
+            "I2": [ 7766 ],
+            "SUM": [ 7669 ],
+            "I3": [ 7766 ],
+            "I1": [ 7670 ],
+            "I0": [  ],
+            "COUT": [ 7667 ],
+            "CIN": [ 7672 ]
+          }
+        },
+        "counter_DFF_Q_19": {
+          "hide_name": 0,
+          "type": "DFF",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X1Y17/DFF5",
+            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:21.5-23.8|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:13.6-13.47",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "Q": "output",
+            "D": "input",
+            "CLK": "input"
+          },
+          "connections": {
+            "Q": [ 7670 ],
+            "D": [ 7669 ],
+            "CLK": [ 7611 ]
+          }
+        },
+        "counter_DFF_Q_18_D_ALU_SUM": {
+          "hide_name": 0,
+          "type": "ALU",
+          "parameters": {
+            "RAW_ALU_LUT": "00000000000000001100000000111100",
+            "ALU_MODE": "00000000000000000000000000000010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X2Y17/ALU0",
+            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:22.20-22.34|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:57.7-63.5",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I2": "input",
+            "SUM": "output",
+            "I3": "input",
+            "I1": "input",
+            "I0": "input",
+            "COUT": "output",
+            "CIN": "input"
+          },
+          "connections": {
+            "I2": [ 7766 ],
+            "SUM": [ 7664 ],
+            "I3": [ 7766 ],
+            "I1": [ 7665 ],
+            "I0": [  ],
+            "COUT": [ 7662 ],
+            "CIN": [ 7667 ]
+          }
+        },
+        "counter_DFF_Q_18": {
+          "hide_name": 0,
+          "type": "DFF",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X2Y17/DFF0",
+            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:21.5-23.8|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:13.6-13.47",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "Q": "output",
+            "D": "input",
+            "CLK": "input"
+          },
+          "connections": {
+            "Q": [ 7665 ],
+            "D": [ 7664 ],
+            "CLK": [ 7611 ]
+          }
+        },
+        "counter_DFF_Q_17_D_ALU_SUM": {
+          "hide_name": 0,
+          "type": "ALU",
+          "parameters": {
+            "RAW_ALU_LUT": "00000000000000001100000000111100",
+            "ALU_MODE": "00000000000000000000000000000010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X2Y17/ALU1",
+            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:22.20-22.34|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:57.7-63.5",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I2": "input",
+            "SUM": "output",
+            "I3": "input",
+            "I1": "input",
+            "I0": "input",
+            "COUT": "output",
+            "CIN": "input"
+          },
+          "connections": {
+            "I2": [ 7766 ],
+            "SUM": [ 7659 ],
+            "I3": [ 7766 ],
+            "I1": [ 7660 ],
+            "I0": [  ],
+            "COUT": [ 7657 ],
+            "CIN": [ 7662 ]
+          }
+        },
+        "counter_DFF_Q_17": {
+          "hide_name": 0,
+          "type": "DFF",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X2Y16/DFF0",
+            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:21.5-23.8|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:13.6-13.47",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "Q": "output",
+            "D": "input",
+            "CLK": "input"
+          },
+          "connections": {
+            "Q": [ 7660 ],
+            "D": [ 7790 ],
+            "CLK": [ 7611 ]
+          }
+        },
+        "counter_DFF_Q_16_D_ALU_SUM": {
+          "hide_name": 0,
+          "type": "ALU",
+          "parameters": {
+            "RAW_ALU_LUT": "00000000000000001100000000111100",
+            "ALU_MODE": "00000000000000000000000000000010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X2Y17/ALU2",
+            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:22.20-22.34|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:57.7-63.5",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I2": "input",
+            "SUM": "output",
+            "I3": "input",
+            "I1": "input",
+            "I0": "input",
+            "COUT": "output",
+            "CIN": "input"
+          },
+          "connections": {
+            "I2": [ 7766 ],
+            "SUM": [ 7654 ],
+            "I3": [ 7766 ],
+            "I1": [ 7655 ],
+            "I0": [  ],
+            "COUT": [ 7652 ],
+            "CIN": [ 7657 ]
+          }
+        },
+        "counter_DFF_Q_16": {
+          "hide_name": 0,
+          "type": "DFF",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X2Y17/DFF2",
+            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:21.5-23.8|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:13.6-13.47",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "Q": "output",
+            "D": "input",
+            "CLK": "input"
+          },
+          "connections": {
+            "Q": [ 7655 ],
+            "D": [ 7654 ],
+            "CLK": [ 7611 ]
+          }
+        },
+        "counter_DFF_Q_15_D_ALU_SUM": {
+          "hide_name": 0,
+          "type": "ALU",
+          "parameters": {
+            "RAW_ALU_LUT": "00000000000000001100000000111100",
+            "ALU_MODE": "00000000000000000000000000000010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X2Y17/ALU3",
+            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:22.20-22.34|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:57.7-63.5",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I2": "input",
+            "SUM": "output",
+            "I3": "input",
+            "I1": "input",
+            "I0": "input",
+            "COUT": "output",
+            "CIN": "input"
+          },
+          "connections": {
+            "I2": [ 7766 ],
+            "SUM": [ 7649 ],
+            "I3": [ 7766 ],
+            "I1": [ 7650 ],
+            "I0": [  ],
+            "COUT": [ 7647 ],
+            "CIN": [ 7652 ]
+          }
+        },
+        "counter_DFF_Q_15": {
+          "hide_name": 0,
+          "type": "DFF",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X2Y17/DFF3",
+            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:21.5-23.8|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:13.6-13.47",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "Q": "output",
+            "D": "input",
+            "CLK": "input"
+          },
+          "connections": {
+            "Q": [ 7650 ],
+            "D": [ 7649 ],
+            "CLK": [ 7611 ]
+          }
+        },
+        "counter_DFF_Q_14_D_ALU_SUM": {
+          "hide_name": 0,
+          "type": "ALU",
+          "parameters": {
+            "RAW_ALU_LUT": "00000000000000001100000000111100",
+            "ALU_MODE": "00000000000000000000000000000010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X2Y17/ALU4",
+            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:22.20-22.34|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:57.7-63.5",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I2": "input",
+            "SUM": "output",
+            "I3": "input",
+            "I1": "input",
+            "I0": "input",
+            "COUT": "output",
+            "CIN": "input"
+          },
+          "connections": {
+            "I2": [ 7766 ],
+            "SUM": [ 7644 ],
+            "I3": [ 7766 ],
+            "I1": [ 7645 ],
+            "I0": [  ],
+            "COUT": [ 7642 ],
+            "CIN": [ 7647 ]
+          }
+        },
+        "counter_DFF_Q_14": {
+          "hide_name": 0,
+          "type": "DFF",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X2Y17/DFF4",
+            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:21.5-23.8|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:13.6-13.47",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "Q": "output",
+            "D": "input",
+            "CLK": "input"
+          },
+          "connections": {
+            "Q": [ 7645 ],
+            "D": [ 7644 ],
+            "CLK": [ 7611 ]
+          }
+        },
+        "counter_DFF_Q_13_D_ALU_SUM": {
+          "hide_name": 0,
+          "type": "ALU",
+          "parameters": {
+            "RAW_ALU_LUT": "00000000000000001100000000111100",
+            "ALU_MODE": "00000000000000000000000000000010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X2Y17/ALU5",
+            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:22.20-22.34|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:57.7-63.5",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I2": "input",
+            "SUM": "output",
+            "I3": "input",
+            "I1": "input",
+            "I0": "input",
+            "COUT": "output",
+            "CIN": "input"
+          },
+          "connections": {
+            "I2": [ 7766 ],
+            "SUM": [ 7639 ],
+            "I3": [ 7766 ],
+            "I1": [ 7640 ],
+            "I0": [  ],
+            "COUT": [ 7637 ],
+            "CIN": [ 7642 ]
+          }
+        },
+        "counter_DFF_Q_13": {
+          "hide_name": 0,
+          "type": "DFF",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X2Y17/DFF5",
+            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:21.5-23.8|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:13.6-13.47",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "Q": "output",
+            "D": "input",
+            "CLK": "input"
+          },
+          "connections": {
+            "Q": [ 7640 ],
+            "D": [ 7639 ],
+            "CLK": [ 7611 ]
+          }
+        },
+        "counter_DFF_Q_12_D_ALU_SUM": {
+          "hide_name": 0,
+          "type": "ALU",
+          "parameters": {
+            "RAW_ALU_LUT": "00000000000000001100000000111100",
+            "ALU_MODE": "00000000000000000000000000000010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X3Y17/ALU0",
+            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:22.20-22.34|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:57.7-63.5",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I2": "input",
+            "SUM": "output",
+            "I3": "input",
+            "I1": "input",
+            "I0": "input",
+            "COUT": "output",
+            "CIN": "input"
+          },
+          "connections": {
+            "I2": [ 7766 ],
+            "SUM": [ 7634 ],
+            "I3": [ 7766 ],
+            "I1": [ 7635 ],
+            "I0": [  ],
+            "COUT": [ 7632 ],
+            "CIN": [ 7637 ]
+          }
+        },
+        "counter_DFF_Q_12": {
+          "hide_name": 0,
+          "type": "DFF",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X3Y17/DFF0",
+            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:21.5-23.8|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:13.6-13.47",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "Q": "output",
+            "D": "input",
+            "CLK": "input"
+          },
+          "connections": {
+            "Q": [ 7635 ],
+            "D": [ 7634 ],
+            "CLK": [ 7611 ]
+          }
+        },
+        "counter_DFF_Q_11_D_ALU_SUM": {
+          "hide_name": 0,
+          "type": "ALU",
+          "parameters": {
+            "RAW_ALU_LUT": "00000000000000001100000000111100",
+            "ALU_MODE": "00000000000000000000000000000010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X3Y17/ALU1",
+            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:22.20-22.34|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:57.7-63.5",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I2": "input",
+            "SUM": "output",
+            "I3": "input",
+            "I1": "input",
+            "I0": "input",
+            "COUT": "output",
+            "CIN": "input"
+          },
+          "connections": {
+            "I2": [ 7766 ],
+            "SUM": [ 7629 ],
+            "I3": [ 7766 ],
+            "I1": [ 7630 ],
+            "I0": [  ],
+            "COUT": [ 7624 ],
+            "CIN": [ 7632 ]
+          }
+        },
+        "counter_DFF_Q_11": {
+          "hide_name": 0,
+          "type": "DFF",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X3Y17/DFF1",
+            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:21.5-23.8|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:13.6-13.47",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "Q": "output",
+            "D": "input",
+            "CLK": "input"
+          },
+          "connections": {
+            "Q": [ 7630 ],
+            "D": [ 7629 ],
+            "CLK": [ 7611 ]
+          }
+        },
+        "counter_DFF_Q_10_D_ALU_SUM": {
+          "hide_name": 0,
+          "type": "ALU",
+          "parameters": {
+            "RAW_ALU_LUT": "00000000000000001100000000111100",
+            "ALU_MODE": "00000000000000000000000000000010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X3Y17/ALU2",
+            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:22.20-22.34|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:57.7-63.5",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I2": "input",
+            "SUM": "output",
+            "I3": "input",
+            "I1": "input",
+            "I0": "input",
+            "COUT": "output",
+            "CIN": "input"
+          },
+          "connections": {
+            "I2": [ 7766 ],
+            "SUM": [ 7621 ],
+            "I3": [ 7766 ],
+            "I1": [ 7622 ],
+            "I0": [  ],
+            "COUT": [ 7625 ],
+            "CIN": [ 7624 ]
+          }
+        },
+        "counter_DFF_Q_10": {
+          "hide_name": 0,
+          "type": "DFF",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X3Y17/DFF2",
+            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:21.5-23.8|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:13.6-13.47",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "Q": "output",
+            "D": "input",
+            "CLK": "input"
+          },
+          "connections": {
+            "Q": [ 7622 ],
+            "D": [ 7621 ],
+            "CLK": [ 7611 ]
+          }
+        },
+        "counter_DFF_Q_1": {
+          "hide_name": 0,
+          "type": "DFF",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X4Y16/DFF3",
+            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:21.5-23.8|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:13.6-13.47",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "Q": "output",
+            "D": "input",
+            "CLK": "input"
+          },
+          "connections": {
+            "Q": [ 7619 ],
+            "D": [ 7792 ],
+            "CLK": [ 7611 ]
+          }
+        },
+        "counter_DFF_Q": {
+          "hide_name": 0,
+          "type": "DFF",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X5Y17/DFF3",
+            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:21.5-23.8|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:13.6-13.47",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "Q": "output",
+            "D": "input",
+            "CLK": "input"
+          },
+          "connections": {
+            "Q": [ 7615 ],
+            "D": [ 7794 ],
+            "CLK": [ 7611 ]
+          }
+        },
+        "clk_IBUF_I": {
+          "hide_name": 0,
+          "type": "IBUF",
+          "parameters": {
+            "NET_I": "NET",
+            "NET_O": "NET"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000101",
+            "NEXTPNR_BEL": "X46Y16/IOBA",
+            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:9.12-9.15",
+            "&IO_TYPE=LVCMOS33": "00000000000000000000000000000001",
+            "&PULL_MODE=UP": "00000000000000000000000000000001",
+            "keep": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "O": "output",
+            "I": "input"
+          },
+          "connections": {
+            "O": [ 7611 ],
+            "I": [ 7606 ]
+          }
+        }
+      },
+      "netnames": {
+        "counter_DFF_Q$conn$D": {
+          "hide_name": 0,
+          "bits": [ 7794 ] ,
+          "attributes": {
+            "ROUTING": "X5Y17/F3;;1;X5Y17/XD3;X5Y17/XD3/F3;1"
+          }
+        },
+        "counter_DFF_Q_1$conn$D": {
+          "hide_name": 0,
+          "bits": [ 7792 ] ,
+          "attributes": {
+            "ROUTING": "X4Y16/F3;;1;X4Y16/XD3;X4Y16/XD3/F3;1"
+          }
+        },
+        "counter_DFF_Q_17$conn$D": {
+          "hide_name": 0,
+          "bits": [ 7790 ] ,
+          "attributes": {
+            "ROUTING": "X2Y16/F0;;1;X2Y16/XD0;X2Y16/XD0/F0;1"
+          }
+        },
+        "counter_DFF_Q_4$conn$D": {
+          "hide_name": 0,
+          "bits": [ 7788 ] ,
+          "attributes": {
+            "ROUTING": "X4Y16/F5;;1;X4Y16/XD5;X4Y16/XD5/F5;1"
+          }
+        },
+        "counter_DFF_Q_8$conn$D": {
+          "hide_name": 0,
+          "bits": [ 7786 ] ,
+          "attributes": {
+            "ROUTING": "X3Y16/F1;;1;X3Y16/XD1;X3Y16/XD1/F1;1"
+          }
+        },
+        "counter_DFF_Q_9$conn$D": {
+          "hide_name": 0,
+          "bits": [ 7784 ] ,
+          "attributes": {
+            "ROUTING": "X3Y16/F0;;1;X3Y16/XD0;X3Y16/XD0/F0;1"
+          }
+        },
+        "counter_DFF_Q_22_D_ALU_SUM_CIN_ALU_COUT_HEAD_ALULC": {
+          "hide_name": 0,
+          "bits": [ 7771 ] ,
+          "attributes": {
+            "ROUTING": "X1Y17/COUT0;;1"
+          }
+        },
+        "led[0]": {
+          "hide_name": 0,
+          "bits": [ 7751 ] ,
+          "attributes": {
+            "ROUTING": " ",
+            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:10.18-10.21"
+          }
+        },
+        "led[1]": {
+          "hide_name": 0,
+          "bits": [ 7749 ] ,
+          "attributes": {
+            "ROUTING": " ",
+            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:10.18-10.21"
+          }
+        },
+        "led[2]": {
+          "hide_name": 0,
+          "bits": [ 7747 ] ,
+          "attributes": {
+            "ROUTING": " ",
+            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:10.18-10.21"
+          }
+        },
+        "led[3]": {
+          "hide_name": 0,
+          "bits": [ 7745 ] ,
+          "attributes": {
+            "ROUTING": " ",
+            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:10.18-10.21"
+          }
+        },
+        "led[4]": {
+          "hide_name": 0,
+          "bits": [ 7743 ] ,
+          "attributes": {
+            "ROUTING": " ",
+            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:10.18-10.21"
+          }
+        },
+        "led[5]": {
+          "hide_name": 0,
+          "bits": [ 7741 ] ,
+          "attributes": {
+            "ROUTING": " ",
+            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:10.18-10.21"
+          }
+        },
+        "counter_DFF_Q_D_ALU_SUM_COUT": {
+          "hide_name": 0,
+          "bits": [ 7737 ] ,
+          "attributes": {
+            "ROUTING": " ",
+            "unused_bits": "0 ",
+            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:22.20-22.34|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:57.7-63.5|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_sim.v:938.25-938.29",
+            "abc9_carry": "00000000000000000000000000000001"
+          }
+        },
+        "counter[14]": {
+          "hide_name": 0,
+          "bits": [ 7734 ] ,
+          "attributes": {
+            "ROUTING": "X3Y16/Q0;;1;X3Y16/SN10;X3Y16/SN10/Q0;1;X3Y17/B3;X3Y17/B3/S111;1",
+            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:19.29-19.36"
+          }
+        },
+        "counter_DFF_Q_9_D": {
+          "hide_name": 0,
+          "bits": [ 7733 ] ,
+          "attributes": {
+            "ROUTING": "X3Y17/F3;;1;X3Y17/N130;X3Y17/N130/F3;1;X3Y16/E270;X3Y16/E270/N131;1;X3Y16/D0;X3Y16/D0/E270;1"
+          }
+        },
+        "counter_DFF_Q_9_D_ALU_SUM_COUT": {
+          "hide_name": 0,
+          "bits": [ 7731 ] ,
+          "attributes": {
+            "ROUTING": "X3Y17/COUT3;;1",
+            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:22.20-22.34|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:57.7-63.5|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_sim.v:938.25-938.29",
+            "abc9_carry": "00000000000000000000000000000001"
+          }
+        },
+        "counter[15]": {
+          "hide_name": 0,
+          "bits": [ 7729 ] ,
+          "attributes": {
+            "ROUTING": "X3Y16/Q1;;1;X3Y16/SN20;X3Y16/SN20/Q1;1;X3Y17/B4;X3Y17/B4/S121;1",
+            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:19.29-19.36"
+          }
+        },
+        "counter_DFF_Q_8_D": {
+          "hide_name": 0,
+          "bits": [ 7728 ] ,
+          "attributes": {
+            "ROUTING": "X3Y17/F4;;1;X3Y17/N100;X3Y17/N100/F4;1;X3Y16/D1;X3Y16/D1/N101;1"
+          }
+        },
+        "counter_DFF_Q_8_D_ALU_SUM_COUT": {
+          "hide_name": 0,
+          "bits": [ 7726 ] ,
+          "attributes": {
+            "ROUTING": "X3Y17/COUT4;;1",
+            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:22.20-22.34|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:57.7-63.5|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_sim.v:938.25-938.29",
+            "abc9_carry": "00000000000000000000000000000001"
+          }
+        },
+        "counter[16]": {
+          "hide_name": 0,
+          "bits": [ 7724 ] ,
+          "attributes": {
+            "ROUTING": "X3Y17/Q5;;1;X3Y17/W100;X3Y17/W100/Q5;1;X3Y17/B5;X3Y17/B5/W100;1",
+            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:19.29-19.36"
+          }
+        },
+        "counter_DFF_Q_7_D": {
+          "hide_name": 0,
+          "bits": [ 7723 ] ,
+          "attributes": {
+            "ROUTING": "X3Y17/F5;;1;X3Y17/XD5;X3Y17/XD5/F5;1"
+          }
+        },
+        "counter_DFF_Q_7_D_ALU_SUM_COUT": {
+          "hide_name": 0,
+          "bits": [ 7721 ] ,
+          "attributes": {
+            "ROUTING": "X4Y17/CIN0;;1",
+            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:22.20-22.34|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:57.7-63.5|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_sim.v:938.25-938.29",
+            "abc9_carry": "00000000000000000000000000000001"
+          }
+        },
+        "counter[17]": {
+          "hide_name": 0,
+          "bits": [ 7719 ] ,
+          "attributes": {
+            "ROUTING": "X4Y17/Q0;;1;X4Y17/S100;X4Y17/S100/Q0;1;X4Y17/B0;X4Y17/B0/S100;1",
+            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:19.29-19.36"
+          }
+        },
+        "counter_DFF_Q_6_D": {
+          "hide_name": 0,
+          "bits": [ 7718 ] ,
+          "attributes": {
+            "ROUTING": "X4Y17/F0;;1;X4Y17/XD0;X4Y17/XD0/F0;1"
+          }
+        },
+        "counter_DFF_Q_6_D_ALU_SUM_COUT": {
+          "hide_name": 0,
+          "bits": [ 7716 ] ,
+          "attributes": {
+            "ROUTING": "X4Y17/COUT0;;1",
+            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:22.20-22.34|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:57.7-63.5|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_sim.v:938.25-938.29",
+            "abc9_carry": "00000000000000000000000000000001"
+          }
+        },
+        "counter[18]": {
+          "hide_name": 0,
+          "bits": [ 7714 ] ,
+          "attributes": {
+            "ROUTING": "X4Y17/Q1;;1;X4Y17/B1;X4Y17/B1/Q1;1",
+            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:19.29-19.36"
+          }
+        },
+        "counter_DFF_Q_5_D": {
+          "hide_name": 0,
+          "bits": [ 7713 ] ,
+          "attributes": {
+            "ROUTING": "X4Y17/F1;;1;X4Y17/XD1;X4Y17/XD1/F1;1"
+          }
+        },
+        "counter_DFF_Q_5_D_ALU_SUM_COUT": {
+          "hide_name": 0,
+          "bits": [ 7711 ] ,
+          "attributes": {
+            "ROUTING": "X4Y17/COUT1;;1",
+            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:22.20-22.34|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:57.7-63.5|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_sim.v:938.25-938.29",
+            "abc9_carry": "00000000000000000000000000000001"
+          }
+        },
+        "counter[19]": {
+          "hide_name": 0,
+          "bits": [ 7709 ] ,
+          "attributes": {
+            "ROUTING": "X4Y16/W830;X4Y16/W830/Q5;1;X0Y16/N250;X0Y16/N250/W834;1;X0Y14/A0;X0Y14/A0/N252;1;X4Y16/Q5;;1;X4Y16/SN10;X4Y16/SN10/Q5;1;X4Y17/B2;X4Y17/B2/S111;1",
+            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:19.29-19.36"
+          }
+        },
+        "counter_DFF_Q_4_D": {
+          "hide_name": 0,
+          "bits": [ 7708 ] ,
+          "attributes": {
+            "ROUTING": "X4Y17/F2;;1;X4Y17/N130;X4Y17/N130/F2;1;X4Y16/D5;X4Y16/D5/N131;1"
+          }
+        },
+        "counter_DFF_Q_4_D_ALU_SUM_COUT": {
+          "hide_name": 0,
+          "bits": [ 7706 ] ,
+          "attributes": {
+            "ROUTING": "X4Y17/COUT2;;1",
+            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:22.20-22.34|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:57.7-63.5|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_sim.v:938.25-938.29",
+            "abc9_carry": "00000000000000000000000000000001"
+          }
+        },
+        "counter[20]": {
+          "hide_name": 0,
+          "bits": [ 7704 ] ,
+          "attributes": {
+            "ROUTING": "X4Y17/W800;X4Y17/W800/Q3;1;X0Y17/N200;X0Y17/N200/W804;1;X0Y15/D1;X0Y15/D1/N202;1;X4Y17/Q3;;1;X4Y17/B3;X4Y17/B3/Q3;1",
+            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:19.29-19.36"
+          }
+        },
+        "counter_DFF_Q_3_D": {
+          "hide_name": 0,
+          "bits": [ 7703 ] ,
+          "attributes": {
+            "ROUTING": "X4Y17/F3;;1;X4Y17/XD3;X4Y17/XD3/F3;1"
+          }
+        },
+        "counter_DFF_Q_3_D_ALU_SUM_COUT": {
+          "hide_name": 0,
+          "bits": [ 7701 ] ,
+          "attributes": {
+            "ROUTING": "X4Y17/COUT3;;1",
+            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:22.20-22.34|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:57.7-63.5|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_sim.v:938.25-938.29",
+            "abc9_carry": "00000000000000000000000000000001"
+          }
+        },
+        "counter_DFF_Q_23_D": {
+          "hide_name": 0,
+          "bits": [ 7698 ] ,
+          "attributes": {
+            "ROUTING": "X1Y16/F0;;1;X1Y16/XD0;X1Y16/XD0/F0;1"
+          }
+        },
+        "counter_DFF_Q_22_D_ALU_SUM_CIN_ALU_COUT_SUM": {
+          "hide_name": 0,
+          "bits": [ 7696 ] ,
+          "attributes": {
+            "ROUTING": " ",
+            "unused_bits": "0 "
+          }
+        },
+        "counter[0]": {
+          "hide_name": 0,
+          "bits": [ 7695 ] ,
+          "attributes": {
+            "ROUTING": "X1Y16/X01;X1Y16/X01/Q0;1;X1Y16/A0;X1Y16/A0/X01;1;X1Y16/Q0;;1;X1Y16/SN10;X1Y16/SN10/Q0;1;X1Y17/B1;X1Y17/B1/S111;1",
+            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:19.29-19.36"
+          }
+        },
+        "counter_DFF_Q_22_D_ALU_SUM_CIN": {
+          "hide_name": 0,
+          "bits": [ 7693 ] ,
+          "attributes": {
+            "ROUTING": "X1Y17/COUT1;;1",
+            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:22.20-22.34|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:57.7-63.5|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_sim.v:938.25-938.29",
+            "abc9_carry": "00000000000000000000000000000001"
+          }
+        },
+        "counter[1]": {
+          "hide_name": 0,
+          "bits": [ 7691 ] ,
+          "attributes": {
+            "ROUTING": "X1Y17/Q2;;1;X1Y17/S130;X1Y17/S130/Q2;1;X1Y17/B2;X1Y17/B2/S130;1",
+            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:19.29-19.36"
+          }
+        },
+        "counter_DFF_Q_22_D": {
+          "hide_name": 0,
+          "bits": [ 7690 ] ,
+          "attributes": {
+            "ROUTING": "X1Y17/F2;;1;X1Y17/XD2;X1Y17/XD2/F2;1"
+          }
+        },
+        "counter_DFF_Q_22_D_ALU_SUM_COUT": {
+          "hide_name": 0,
+          "bits": [ 7688 ] ,
+          "attributes": {
+            "ROUTING": "X1Y17/COUT2;;1",
+            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:22.20-22.34|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:57.7-63.5|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_sim.v:938.25-938.29",
+            "abc9_carry": "00000000000000000000000000000001"
+          }
+        },
+        "counter[2]": {
+          "hide_name": 0,
+          "bits": [ 7686 ] ,
+          "attributes": {
+            "ROUTING": "X1Y17/Q3;;1;X1Y17/B3;X1Y17/B3/Q3;1",
+            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:19.29-19.36"
+          }
+        },
+        "counter_DFF_Q_21_D": {
+          "hide_name": 0,
+          "bits": [ 7685 ] ,
+          "attributes": {
+            "ROUTING": "X1Y17/F3;;1;X1Y17/XD3;X1Y17/XD3/F3;1"
+          }
+        },
+        "counter_DFF_Q_21_D_ALU_SUM_COUT": {
+          "hide_name": 0,
+          "bits": [ 7683 ] ,
+          "attributes": {
+            "ROUTING": "X1Y17/COUT3;;1",
+            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:22.20-22.34|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:57.7-63.5|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_sim.v:938.25-938.29",
+            "abc9_carry": "00000000000000000000000000000001"
+          }
+        },
+        "counter[3]": {
+          "hide_name": 0,
+          "bits": [ 7681 ] ,
+          "attributes": {
+            "ROUTING": "X1Y17/Q4;;1;X1Y17/X03;X1Y17/X03/Q4;1;X1Y17/B4;X1Y17/B4/X03;1",
+            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:19.29-19.36"
+          }
+        },
+        "counter_DFF_Q_20_D": {
+          "hide_name": 0,
+          "bits": [ 7680 ] ,
+          "attributes": {
+            "ROUTING": "X1Y17/F4;;1;X1Y17/XD4;X1Y17/XD4/F4;1"
+          }
+        },
+        "counter[21]": {
+          "hide_name": 0,
+          "bits": [ 7678 ] ,
+          "attributes": {
+            "ROUTING": "X4Y17/SN10;X4Y17/SN10/Q4;1;X4Y18/W810;X4Y18/W810/S111;1;X0Y18/S220;X0Y18/S220/W814;1;X0Y20/D1;X0Y20/D1/S222;1;X4Y17/Q4;;1;X4Y17/X03;X4Y17/X03/Q4;1;X4Y17/B4;X4Y17/B4/X03;1",
+            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:19.29-19.36"
+          }
+        },
+        "counter_DFF_Q_2_D": {
+          "hide_name": 0,
+          "bits": [ 7677 ] ,
+          "attributes": {
+            "ROUTING": "X4Y17/F4;;1;X4Y17/XD4;X4Y17/XD4/F4;1"
+          }
+        },
+        "counter_DFF_Q_1_D_ALU_SUM_COUT": {
+          "hide_name": 0,
+          "bits": [ 7675 ] ,
+          "attributes": {
+            "ROUTING": "X5Y17/CIN0;;1",
+            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:22.20-22.34|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:57.7-63.5|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_sim.v:938.25-938.29",
+            "abc9_carry": "00000000000000000000000000000001"
+          }
+        },
+        "counter_DFF_Q_2_D_ALU_SUM_COUT": {
+          "hide_name": 0,
+          "bits": [ 7674 ] ,
+          "attributes": {
+            "ROUTING": "X4Y17/COUT4;;1",
+            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:22.20-22.34|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:57.7-63.5|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_sim.v:938.25-938.29",
+            "abc9_carry": "00000000000000000000000000000001"
+          }
+        },
+        "counter_DFF_Q_20_D_ALU_SUM_COUT": {
+          "hide_name": 0,
+          "bits": [ 7672 ] ,
+          "attributes": {
+            "ROUTING": "X1Y17/COUT4;;1",
+            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:22.20-22.34|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:57.7-63.5|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_sim.v:938.25-938.29",
+            "abc9_carry": "00000000000000000000000000000001"
+          }
+        },
+        "counter[4]": {
+          "hide_name": 0,
+          "bits": [ 7670 ] ,
+          "attributes": {
+            "ROUTING": "X1Y17/Q5;;1;X1Y17/X08;X1Y17/X08/Q5;1;X1Y17/B5;X1Y17/B5/X08;1",
+            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:19.29-19.36"
+          }
+        },
+        "counter_DFF_Q_19_D": {
+          "hide_name": 0,
+          "bits": [ 7669 ] ,
+          "attributes": {
+            "ROUTING": "X1Y17/F5;;1;X1Y17/XD5;X1Y17/XD5/F5;1"
+          }
+        },
+        "counter_DFF_Q_19_D_ALU_SUM_COUT": {
+          "hide_name": 0,
+          "bits": [ 7667 ] ,
+          "attributes": {
+            "ROUTING": "X2Y17/CIN0;;1",
+            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:22.20-22.34|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:57.7-63.5|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_sim.v:938.25-938.29",
+            "abc9_carry": "00000000000000000000000000000001"
+          }
+        },
+        "counter[5]": {
+          "hide_name": 0,
+          "bits": [ 7665 ] ,
+          "attributes": {
+            "ROUTING": "X2Y17/Q0;;1;X2Y17/X05;X2Y17/X05/Q0;1;X2Y17/B0;X2Y17/B0/X05;1",
+            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:19.29-19.36"
+          }
+        },
+        "counter_DFF_Q_18_D": {
+          "hide_name": 0,
+          "bits": [ 7664 ] ,
+          "attributes": {
+            "ROUTING": "X2Y17/F0;;1;X2Y17/XD0;X2Y17/XD0/F0;1"
+          }
+        },
+        "counter_DFF_Q_18_D_ALU_SUM_COUT": {
+          "hide_name": 0,
+          "bits": [ 7662 ] ,
+          "attributes": {
+            "ROUTING": "X2Y17/COUT0;;1",
+            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:22.20-22.34|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:57.7-63.5|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_sim.v:938.25-938.29",
+            "abc9_carry": "00000000000000000000000000000001"
+          }
+        },
+        "counter[6]": {
+          "hide_name": 0,
+          "bits": [ 7660 ] ,
+          "attributes": {
+            "ROUTING": "X2Y16/Q0;;1;X2Y16/SN10;X2Y16/SN10/Q0;1;X2Y17/B1;X2Y17/B1/S111;1",
+            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:19.29-19.36"
+          }
+        },
+        "counter_DFF_Q_17_D": {
+          "hide_name": 0,
+          "bits": [ 7659 ] ,
+          "attributes": {
+            "ROUTING": "X2Y17/F1;;1;X2Y17/N100;X2Y17/N100/F1;1;X2Y16/D0;X2Y16/D0/N101;1"
+          }
+        },
+        "counter_DFF_Q_17_D_ALU_SUM_COUT": {
+          "hide_name": 0,
+          "bits": [ 7657 ] ,
+          "attributes": {
+            "ROUTING": "X2Y17/COUT1;;1",
+            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:22.20-22.34|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:57.7-63.5|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_sim.v:938.25-938.29",
+            "abc9_carry": "00000000000000000000000000000001"
+          }
+        },
+        "counter[7]": {
+          "hide_name": 0,
+          "bits": [ 7655 ] ,
+          "attributes": {
+            "ROUTING": "X2Y17/Q2;;1;X2Y17/X01;X2Y17/X01/Q2;1;X2Y17/B2;X2Y17/B2/X01;1",
+            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:19.29-19.36"
+          }
+        },
+        "counter_DFF_Q_16_D": {
+          "hide_name": 0,
+          "bits": [ 7654 ] ,
+          "attributes": {
+            "ROUTING": "X2Y17/F2;;1;X2Y17/XD2;X2Y17/XD2/F2;1"
+          }
+        },
+        "counter_DFF_Q_16_D_ALU_SUM_COUT": {
+          "hide_name": 0,
+          "bits": [ 7652 ] ,
+          "attributes": {
+            "ROUTING": "X2Y17/COUT2;;1",
+            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:22.20-22.34|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:57.7-63.5|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_sim.v:938.25-938.29",
+            "abc9_carry": "00000000000000000000000000000001"
+          }
+        },
+        "counter[8]": {
+          "hide_name": 0,
+          "bits": [ 7650 ] ,
+          "attributes": {
+            "ROUTING": "X2Y17/Q3;;1;X2Y17/B3;X2Y17/B3/Q3;1",
+            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:19.29-19.36"
+          }
+        },
+        "counter_DFF_Q_15_D": {
+          "hide_name": 0,
+          "bits": [ 7649 ] ,
+          "attributes": {
+            "ROUTING": "X2Y17/F3;;1;X2Y17/XD3;X2Y17/XD3/F3;1"
+          }
+        },
+        "counter_DFF_Q_15_D_ALU_SUM_COUT": {
+          "hide_name": 0,
+          "bits": [ 7647 ] ,
+          "attributes": {
+            "ROUTING": "X2Y17/COUT3;;1",
+            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:22.20-22.34|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:57.7-63.5|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_sim.v:938.25-938.29",
+            "abc9_carry": "00000000000000000000000000000001"
+          }
+        },
+        "counter[9]": {
+          "hide_name": 0,
+          "bits": [ 7645 ] ,
+          "attributes": {
+            "ROUTING": "X2Y17/Q4;;1;X2Y17/W100;X2Y17/W100/Q4;1;X2Y17/B4;X2Y17/B4/W100;1",
+            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:19.29-19.36"
+          }
+        },
+        "counter_DFF_Q_14_D": {
+          "hide_name": 0,
+          "bits": [ 7644 ] ,
+          "attributes": {
+            "ROUTING": "X2Y17/F4;;1;X2Y17/XD4;X2Y17/XD4/F4;1"
+          }
+        },
+        "counter_DFF_Q_14_D_ALU_SUM_COUT": {
+          "hide_name": 0,
+          "bits": [ 7642 ] ,
+          "attributes": {
+            "ROUTING": "X2Y17/COUT4;;1",
+            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:22.20-22.34|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:57.7-63.5|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_sim.v:938.25-938.29",
+            "abc9_carry": "00000000000000000000000000000001"
+          }
+        },
+        "counter[10]": {
+          "hide_name": 0,
+          "bits": [ 7640 ] ,
+          "attributes": {
+            "ROUTING": "X2Y17/Q5;;1;X2Y17/E250;X2Y17/E250/Q5;1;X2Y17/B5;X2Y17/B5/E250;1",
+            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:19.29-19.36"
+          }
+        },
+        "counter_DFF_Q_13_D": {
+          "hide_name": 0,
+          "bits": [ 7639 ] ,
+          "attributes": {
+            "ROUTING": "X2Y17/F5;;1;X2Y17/XD5;X2Y17/XD5/F5;1"
+          }
+        },
+        "counter_DFF_Q_13_D_ALU_SUM_COUT": {
+          "hide_name": 0,
+          "bits": [ 7637 ] ,
+          "attributes": {
+            "ROUTING": "X3Y17/CIN0;;1",
+            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:22.20-22.34|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:57.7-63.5|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_sim.v:938.25-938.29",
+            "abc9_carry": "00000000000000000000000000000001"
+          }
+        },
+        "counter[11]": {
+          "hide_name": 0,
+          "bits": [ 7635 ] ,
+          "attributes": {
+            "ROUTING": "X3Y17/Q0;;1;X3Y17/X05;X3Y17/X05/Q0;1;X3Y17/B0;X3Y17/B0/X05;1",
+            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:19.29-19.36"
+          }
+        },
+        "counter_DFF_Q_12_D": {
+          "hide_name": 0,
+          "bits": [ 7634 ] ,
+          "attributes": {
+            "ROUTING": "X3Y17/F0;;1;X3Y17/XD0;X3Y17/XD0/F0;1"
+          }
+        },
+        "counter_DFF_Q_12_D_ALU_SUM_COUT": {
+          "hide_name": 0,
+          "bits": [ 7632 ] ,
+          "attributes": {
+            "ROUTING": "X3Y17/COUT0;;1",
+            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:22.20-22.34|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:57.7-63.5|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_sim.v:938.25-938.29",
+            "abc9_carry": "00000000000000000000000000000001"
+          }
+        },
+        "counter[12]": {
+          "hide_name": 0,
+          "bits": [ 7630 ] ,
+          "attributes": {
+            "ROUTING": "X3Y17/Q1;;1;X3Y17/B1;X3Y17/B1/Q1;1",
+            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:19.29-19.36"
+          }
+        },
+        "counter_DFF_Q_11_D": {
+          "hide_name": 0,
+          "bits": [ 7629 ] ,
+          "attributes": {
+            "ROUTING": "X3Y17/F1;;1;X3Y17/XD1;X3Y17/XD1/F1;1"
+          }
+        },
+        "$PACKER_GND": {
+          "hide_name": 1,
+          "bits": [ 7767 ] ,
+          "attributes": {
+            "ROUTING": " "
+          }
+        },
+        "$PACKER_VCC": {
+          "hide_name": 1,
+          "bits": [ 7766 ] ,
+          "attributes": {
+            "ROUTING": "X1Y17/C0;X1Y17/C0/X04;1;X1Y17/D2;X1Y17/D2/E260;1;X1Y17/D4;X1Y17/D4/X07;1;X4Y17/D1;X4Y17/D1/X08;1;X4Y17/D5;X4Y17/D5/X04;1;X2Y17/D1;X2Y17/D1/X08;1;X4Y17/D4;X4Y17/D4/X04;1;X2Y17/C4;X2Y17/C4/X08;1;X2Y17/D4;X2Y17/D4/X04;1;X3Y17/C4;X3Y17/C4/X08;1;X2Y17/C0;X2Y17/C0/X04;1;X4Y17/C1;X4Y17/C1/X04;1;X3Y17/C2;X3Y17/C2/X04;1;X4Y17/C2;X4Y17/C2/X04;1;X0Y0/N220;X0Y0/N220/VCC;1;X0Y0/C4;X0Y0/C4/S221;1;X4Y17/D0;X4Y17/D0/X08;1;X3Y17/D4;X3Y17/D4/X04;1;X1Y17/C3;X1Y17/C3/X04;1;X3Y17/C0;X3Y17/C0/X04;1;X2Y17/D0;X2Y17/D0/X03;1;X1Y17/C1;X1Y17/C1/X04;1;X2Y17/C1;X2Y17/C1/X04;1;X4Y17/D3;X4Y17/D3/X08;1;X4Y17/X08;X4Y17/X08/VCC;1;X4Y17/D2;X4Y17/D2/X08;1;X3Y17/D3;X3Y17/D3/X08;1;X4Y17/C4;X4Y17/C4/S220;1;X2Y17/X08;X2Y17/X08/VCC;1;X2Y17/C5;X2Y17/C5/X08;1;X2Y17/D5;X2Y17/D5/X04;1;X1Y17/E270;X1Y17/E270/VCC;1;X1Y17/D1;X1Y17/D1/E270;1;X2Y17/C3;X2Y17/C3/X04;1;X3Y17/D0;X3Y17/D0/X03;1;X3Y17/X08;X3Y17/X08/VCC;1;X3Y17/C5;X3Y17/C5/X08;1;X5Y17/S260;X5Y17/S260/VCC;1;X5Y17/D0;X5Y17/D0/S260;1;X1Y17/E260;X1Y17/E260/VCC;1;X1Y17/D3;X1Y17/D3/E260;1;X1Y17/C4;X1Y17/C4/S220;1;X3Y17/D2;X3Y17/D2/X03;1;X1Y17/X04;X1Y17/X04/VCC;1;X1Y17/C2;X1Y17/C2/X04;1;X4Y17/S220;X4Y17/S220/VCC;1;X4Y17/C5;X4Y17/C5/S220;1;X2Y17/X04;X2Y17/X04/VCC;1;X2Y17/C2;X2Y17/C2/X04;1;X2Y17/D3;X2Y17/D3/X03;1;X3Y17/X03;X3Y17/X03/VCC;1;X3Y17/D1;X3Y17/D1/X03;1;X3Y17/D5;X3Y17/D5/X04;1;X3Y17/C1;X3Y17/C1/X04;1;X4Y17/C0;X4Y17/C0/X04;1;X5Y17/X04;X5Y17/X04/VCC;1;X5Y17/C0;X5Y17/C0/X04;1;X4Y17/X04;X4Y17/X04/VCC;1;X4Y17/C3;X4Y17/C3/X04;1;X3Y17/X04;X3Y17/X04/VCC;1;X3Y17/C3;X3Y17/C3/X04;1;X1Y17/S220;X1Y17/S220/VCC;1;X1Y17/C5;X1Y17/C5/S220;1;X1Y17/X07;X1Y17/X07/VCC;1;X1Y17/D5;X1Y17/D5/X07;1;X0Y0/VCC;;1;X2Y17/X03;X2Y17/X03/VCC;1;X2Y17/D2;X2Y17/D2/X03;1"
+          }
+        },
+        "counter_DFF_Q_10_D_ALU_SUM_COUT": {
+          "hide_name": 0,
+          "bits": [ 7625 ] ,
+          "attributes": {
+            "ROUTING": "X3Y17/COUT2;;1",
+            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:22.20-22.34|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:57.7-63.5|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_sim.v:938.25-938.29",
+            "abc9_carry": "00000000000000000000000000000001"
+          }
+        },
+        "counter_DFF_Q_11_D_ALU_SUM_COUT": {
+          "hide_name": 0,
+          "bits": [ 7624 ] ,
+          "attributes": {
+            "ROUTING": "X3Y17/COUT1;;1",
+            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:22.20-22.34|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:57.7-63.5|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_sim.v:938.25-938.29",
+            "abc9_carry": "00000000000000000000000000000001"
+          }
+        },
+        "counter[13]": {
+          "hide_name": 0,
+          "bits": [ 7622 ] ,
+          "attributes": {
+            "ROUTING": "X3Y17/Q2;;1;X3Y17/X01;X3Y17/X01/Q2;1;X3Y17/B2;X3Y17/B2/X01;1",
+            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:19.29-19.36"
+          }
+        },
+        "counter_DFF_Q_10_D": {
+          "hide_name": 0,
+          "bits": [ 7621 ] ,
+          "attributes": {
+            "ROUTING": "X3Y17/F2;;1;X3Y17/XD2;X3Y17/XD2/F2;1"
+          }
+        },
+        "counter[22]": {
+          "hide_name": 0,
+          "bits": [ 7619 ] ,
+          "attributes": {
+            "ROUTING": "X4Y16/S800;X4Y16/S800/Q3;1;X4Y20/W800;X4Y20/W800/S804;1;X0Y20/S200;X0Y20/S200/W804;1;X0Y21/D1;X0Y21/D1/S201;1;X4Y16/Q3;;1;X4Y16/SN20;X4Y16/SN20/Q3;1;X4Y17/B5;X4Y17/B5/S121;1",
+            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:19.29-19.36"
+          }
+        },
+        "counter_DFF_Q_1_D": {
+          "hide_name": 0,
+          "bits": [ 7618 ] ,
+          "attributes": {
+            "ROUTING": "X4Y17/F5;;1;X4Y17/N100;X4Y17/N100/F5;1;X4Y16/D3;X4Y16/D3/N101;1"
+          }
+        },
+        "counter[23]": {
+          "hide_name": 0,
+          "bits": [ 7615 ] ,
+          "attributes": {
+            "ROUTING": "X5Y17/EW10;X5Y17/EW10/Q3;1;X4Y17/W810;X4Y17/W810/W111;1;X0Y17/S810;X0Y17/S810/W814;1;X0Y25/N100;X0Y25/N100/S818;1;X0Y24/D1;X0Y24/D1/N101;1;X5Y17/Q3;;1;X5Y17/S100;X5Y17/S100/Q3;1;X5Y17/B0;X5Y17/B0/S100;1",
+            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:19.29-19.36"
+          }
+        },
+        "counter_DFF_Q_D": {
+          "hide_name": 0,
+          "bits": [ 7614 ] ,
+          "attributes": {
+            "ROUTING": "X5Y17/F0;;1;X5Y17/D3;X5Y17/D3/F0;1"
+          }
+        },
+        "clk_IBUF_I_O": {
+          "hide_name": 0,
+          "bits": [ 7611 ] ,
+          "attributes": {
+            "ROUTING": "X3Y16/CLK0;X3Y16/CLK0/GB00;5;X3Y17/CLK2;X3Y17/CLK2/GB00;5;X4Y17/CLK0;X4Y17/CLK0/GB00;5;X4Y16/CLK2;X4Y16/CLK2/GB00;5;X4Y17/CLK1;X4Y17/CLK1/GB00;5;X1Y16/CLK0;X1Y16/CLK0/GB00;5;X1Y17/CLK1;X1Y17/CLK1/GB00;5;X4Y17/CLK2;X4Y17/CLK2/GB00;5;X1Y17/CLK2;X1Y17/CLK2/GB00;5;X2Y17/CLK0;X2Y17/CLK0/GB00;5;X2Y16/CLK0;X2Y16/CLK0/GB00;5;X2Y17/CLK1;X2Y17/CLK1/GB00;5;X2Y17/CLK2;X2Y17/CLK2/GB00;5;X3Y17/CLK0;X3Y17/CLK0/GB00;5;X3Y17/CLK1;X3Y17/CLK1/GB00;5;X4Y16/GB00;X3Y16/GBO0/GT00;5;X4Y16/CLK1;X4Y16/CLK1/GB00;5;X11Y19/SPINE16;X27Y9/SPINE16/PCLKR1;5;X3Y15/GT00;X3Y19/GT00/SPINE16;5;X0Y17/GB00;X3Y17/GBO0/GT00;5;X5Y17/CLK1;X5Y17/CLK1/GB00;5;X46Y16/F6;;5"
+          }
+        },
+        "clk": {
+          "hide_name": 0,
+          "bits": [ 7606 ] ,
+          "attributes": {
+            "ROUTING": " ",
+            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:9.12-9.15"
+          }
+        }
+      }
+    }
+  }
+}
