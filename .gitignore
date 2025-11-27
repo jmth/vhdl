@@ -1,0 +1,42 @@
+# Ignore common build artifacts and temporary files for VHDL/FPGA projects
+
+# Simulation outputs
+*.vcd
+*.vcd.gz
+*.vvp
+
+# Synth / place-and-route outputs
+*.bit
+*.bin
+*.svf
+*.edf
+*_pnr.json
+*.syn.json
+
+# Logs, reports, and journals
+*.log
+*.rpt
+*.jou
+
+# Object / build files
+*.o
+*.a
+*.so
+*.d
+build/
+out/
+build-*/
+sim_build/
+
+# Temporary and editor files
+*.tmp
+*.bak
+*.cache
+.vscode/
+*.swp
+*.swo
+Thumbs.db
+.DS_Store
+
+# Misc
+*.wdb
