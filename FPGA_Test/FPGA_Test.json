@@ -23,7 +23,7 @@
         }
       },
       "cells": {
-        "$specify$860": {
+        "$specify$764": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -262,7 +262,7 @@
         }
       },
       "cells": {
-        "$specify$860": {
+        "$specify$764": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -18384,7 +18384,7 @@
       "attributes": {
         "dynports": "00000000000000000000000000000001",
         "top": "00000000000000000000000000000001",
-        "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:8.1-28.10"
+        "src": "c:\\Users\\jmterres\\Downloads\\vhdl\\FPGA_Test\\top.v:8.1-31.10"
       },
       "ports": {
         "clk": {
@@ -18421,7 +18421,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:21.5-23.8|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:13.6-13.47"
+            "src": "c:\\Users\\jmterres\\Downloads\\vhdl\\FPGA_Test\\top.v:22.5-24.8|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:13.6-13.47"
           },
           "port_directions": {
             "CLK": "input",
@@ -18441,7 +18441,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:21.5-23.8|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:13.6-13.47"
+            "src": "c:\\Users\\jmterres\\Downloads\\vhdl\\FPGA_Test\\top.v:22.5-24.8|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:13.6-13.47"
           },
           "port_directions": {
             "CLK": "input",
@@ -18454,14 +18454,41 @@
             "Q": [ 13 ]
           }
         },
-        "counter_DFF_Q_10": {
+        "counter_DFF_Q_1_D_ALU_SUM": {
+          "hide_name": 0,
+          "type": "ALU",
+          "parameters": {
+            "ALU_MODE": "00000000000000000000000000000010"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "c:\\Users\\jmterres\\Downloads\\vhdl\\FPGA_Test\\top.v:23.20-23.34|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:57.7-63.5"
+          },
+          "port_directions": {
+            "CIN": "input",
+            "COUT": "output",
+            "I0": "input",
+            "I1": "input",
+            "I3": "input",
+            "SUM": "output"
+          },
+          "connections": {
+            "CIN": [ 14 ],
+            "COUT": [ 15 ],
+            "I0": [ 16 ],
+            "I1": [ 13 ],
+            "I3": [ 17 ],
+            "SUM": [ 12 ]
+          }
+        },
+        "counter_DFF_Q_2": {
           "hide_name": 0,
           "type": "DFF",
           "parameters": {
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:21.5-23.8|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:13.6-13.47"
+            "src": "c:\\Users\\jmterres\\Downloads\\vhdl\\FPGA_Test\\top.v:22.5-24.8|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:13.6-13.47"
           },
           "port_directions": {
             "CLK": "input",
@@ -18470,11 +18497,11 @@
           },
           "connections": {
             "CLK": [ 9 ],
-            "D": [ 14 ],
-            "Q": [ 15 ]
+            "D": [ 18 ],
+            "Q": [ 19 ]
           }
         },
-        "counter_DFF_Q_10_D_ALU_SUM": {
+        "counter_DFF_Q_2_D_ALU_SUM": {
           "hide_name": 0,
           "type": "ALU",
           "parameters": {
@@ -18482,7 +18509,222 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:22.20-22.34|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:57.7-63.5"
+            "src": "c:\\Users\\jmterres\\Downloads\\vhdl\\FPGA_Test\\top.v:23.20-23.34|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:57.7-63.5"
+          },
+          "port_directions": {
+            "CIN": "input",
+            "COUT": "output",
+            "I0": "input",
+            "I1": "input",
+            "I3": "input",
+            "SUM": "output"
+          },
+          "connections": {
+            "CIN": [ 20 ],
+            "COUT": [ 14 ],
+            "I0": [ 16 ],
+            "I1": [ 19 ],
+            "I3": [ 17 ],
+            "SUM": [ 18 ]
+          }
+        },
+        "counter_DFF_Q_3": {
+          "hide_name": 0,
+          "type": "DFF",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "c:\\Users\\jmterres\\Downloads\\vhdl\\FPGA_Test\\top.v:22.5-24.8|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:13.6-13.47"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "CLK": [ 9 ],
+            "D": [ 21 ],
+            "Q": [ 22 ]
+          }
+        },
+        "counter_DFF_Q_3_D_ALU_SUM": {
+          "hide_name": 0,
+          "type": "ALU",
+          "parameters": {
+            "ALU_MODE": "00000000000000000000000000000010"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "c:\\Users\\jmterres\\Downloads\\vhdl\\FPGA_Test\\top.v:23.20-23.34|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:57.7-63.5"
+          },
+          "port_directions": {
+            "CIN": "input",
+            "COUT": "output",
+            "I0": "input",
+            "I1": "input",
+            "I3": "input",
+            "SUM": "output"
+          },
+          "connections": {
+            "CIN": [ 23 ],
+            "COUT": [ 20 ],
+            "I0": [ 16 ],
+            "I1": [ 22 ],
+            "I3": [ 17 ],
+            "SUM": [ 21 ]
+          }
+        },
+        "counter_DFF_Q_4": {
+          "hide_name": 0,
+          "type": "DFF",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "c:\\Users\\jmterres\\Downloads\\vhdl\\FPGA_Test\\top.v:22.5-24.8|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:13.6-13.47"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "CLK": [ 9 ],
+            "D": [ 24 ],
+            "Q": [ 25 ]
+          }
+        },
+        "counter_DFF_Q_4_D_ALU_SUM": {
+          "hide_name": 0,
+          "type": "ALU",
+          "parameters": {
+            "ALU_MODE": "00000000000000000000000000000010"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "c:\\Users\\jmterres\\Downloads\\vhdl\\FPGA_Test\\top.v:23.20-23.34|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:57.7-63.5"
+          },
+          "port_directions": {
+            "CIN": "input",
+            "COUT": "output",
+            "I0": "input",
+            "I1": "input",
+            "I3": "input",
+            "SUM": "output"
+          },
+          "connections": {
+            "CIN": [ 26 ],
+            "COUT": [ 23 ],
+            "I0": [ 16 ],
+            "I1": [ 25 ],
+            "I3": [ 17 ],
+            "SUM": [ 24 ]
+          }
+        },
+        "counter_DFF_Q_5": {
+          "hide_name": 0,
+          "type": "DFF",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "c:\\Users\\jmterres\\Downloads\\vhdl\\FPGA_Test\\top.v:22.5-24.8|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:13.6-13.47"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "CLK": [ 9 ],
+            "D": [ 27 ],
+            "Q": [ 28 ]
+          }
+        },
+        "counter_DFF_Q_5_D_ALU_SUM": {
+          "hide_name": 0,
+          "type": "ALU",
+          "parameters": {
+            "ALU_MODE": "00000000000000000000000000000010"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "c:\\Users\\jmterres\\Downloads\\vhdl\\FPGA_Test\\top.v:23.20-23.34|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:57.7-63.5"
+          },
+          "port_directions": {
+            "CIN": "input",
+            "COUT": "output",
+            "I0": "input",
+            "I1": "input",
+            "I3": "input",
+            "SUM": "output"
+          },
+          "connections": {
+            "CIN": [ 29 ],
+            "COUT": [ 26 ],
+            "I0": [ 16 ],
+            "I1": [ 28 ],
+            "I3": [ 17 ],
+            "SUM": [ 27 ]
+          }
+        },
+        "counter_DFF_Q_6": {
+          "hide_name": 0,
+          "type": "DFF",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "c:\\Users\\jmterres\\Downloads\\vhdl\\FPGA_Test\\top.v:22.5-24.8|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:13.6-13.47"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "CLK": [ 9 ],
+            "D": [ 30 ],
+            "Q": [ 31 ]
+          }
+        },
+        "counter_DFF_Q_6_D_ALU_SUM": {
+          "hide_name": 0,
+          "type": "ALU",
+          "parameters": {
+            "ALU_MODE": "00000000000000000000000000000010"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "c:\\Users\\jmterres\\Downloads\\vhdl\\FPGA_Test\\top.v:23.20-23.34|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:57.7-63.5"
+          },
+          "port_directions": {
+            "CIN": "input",
+            "COUT": "output",
+            "I0": "input",
+            "I1": "input",
+            "I3": "input",
+            "SUM": "output"
+          },
+          "connections": {
+            "CIN": [ 32 ],
+            "COUT": [ 29 ],
+            "I0": [ 16 ],
+            "I1": [ 31 ],
+            "I3": [ 17 ],
+            "SUM": [ 30 ]
+          }
+        },
+        "counter_DFF_Q_6_D_ALU_SUM_CIN_ALU_COUT": {
+          "hide_name": 0,
+          "type": "ALU",
+          "parameters": {
+            "ALU_MODE": "00000000000000000000000000000010"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "c:\\Users\\jmterres\\Downloads\\vhdl\\FPGA_Test\\top.v:23.20-23.34|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:57.7-63.5"
           },
           "port_directions": {
             "CIN": "input",
@@ -18494,256 +18736,21 @@
           },
           "connections": {
             "CIN": [ 16 ],
-            "COUT": [ 17 ],
-            "I0": [ 18 ],
-            "I1": [ 15 ],
-            "I3": [ 19 ],
-            "SUM": [ 14 ]
-          }
-        },
-        "counter_DFF_Q_11": {
-          "hide_name": 0,
-          "type": "DFF",
-          "parameters": {
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:21.5-23.8|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:13.6-13.47"
-          },
-          "port_directions": {
-            "CLK": "input",
-            "D": "input",
-            "Q": "output"
-          },
-          "connections": {
-            "CLK": [ 9 ],
-            "D": [ 20 ],
-            "Q": [ 21 ]
-          }
-        },
-        "counter_DFF_Q_11_D_ALU_SUM": {
-          "hide_name": 0,
-          "type": "ALU",
-          "parameters": {
-            "ALU_MODE": "00000000000000000000000000000010"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:22.20-22.34|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:57.7-63.5"
-          },
-          "port_directions": {
-            "CIN": "input",
-            "COUT": "output",
-            "I0": "input",
-            "I1": "input",
-            "I3": "input",
-            "SUM": "output"
-          },
-          "connections": {
-            "CIN": [ 22 ],
-            "COUT": [ 16 ],
-            "I0": [ 18 ],
-            "I1": [ 21 ],
-            "I3": [ 19 ],
-            "SUM": [ 20 ]
-          }
-        },
-        "counter_DFF_Q_12": {
-          "hide_name": 0,
-          "type": "DFF",
-          "parameters": {
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:21.5-23.8|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:13.6-13.47"
-          },
-          "port_directions": {
-            "CLK": "input",
-            "D": "input",
-            "Q": "output"
-          },
-          "connections": {
-            "CLK": [ 9 ],
-            "D": [ 23 ],
-            "Q": [ 24 ]
-          }
-        },
-        "counter_DFF_Q_12_D_ALU_SUM": {
-          "hide_name": 0,
-          "type": "ALU",
-          "parameters": {
-            "ALU_MODE": "00000000000000000000000000000010"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:22.20-22.34|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:57.7-63.5"
-          },
-          "port_directions": {
-            "CIN": "input",
-            "COUT": "output",
-            "I0": "input",
-            "I1": "input",
-            "I3": "input",
-            "SUM": "output"
-          },
-          "connections": {
-            "CIN": [ 25 ],
-            "COUT": [ 22 ],
-            "I0": [ 18 ],
-            "I1": [ 24 ],
-            "I3": [ 19 ],
-            "SUM": [ 23 ]
-          }
-        },
-        "counter_DFF_Q_13": {
-          "hide_name": 0,
-          "type": "DFF",
-          "parameters": {
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:21.5-23.8|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:13.6-13.47"
-          },
-          "port_directions": {
-            "CLK": "input",
-            "D": "input",
-            "Q": "output"
-          },
-          "connections": {
-            "CLK": [ 9 ],
-            "D": [ 26 ],
-            "Q": [ 27 ]
-          }
-        },
-        "counter_DFF_Q_13_D_ALU_SUM": {
-          "hide_name": 0,
-          "type": "ALU",
-          "parameters": {
-            "ALU_MODE": "00000000000000000000000000000010"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:22.20-22.34|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:57.7-63.5"
-          },
-          "port_directions": {
-            "CIN": "input",
-            "COUT": "output",
-            "I0": "input",
-            "I1": "input",
-            "I3": "input",
-            "SUM": "output"
-          },
-          "connections": {
-            "CIN": [ 28 ],
-            "COUT": [ 25 ],
-            "I0": [ 18 ],
-            "I1": [ 27 ],
-            "I3": [ 19 ],
-            "SUM": [ 26 ]
-          }
-        },
-        "counter_DFF_Q_14": {
-          "hide_name": 0,
-          "type": "DFF",
-          "parameters": {
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:21.5-23.8|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:13.6-13.47"
-          },
-          "port_directions": {
-            "CLK": "input",
-            "D": "input",
-            "Q": "output"
-          },
-          "connections": {
-            "CLK": [ 9 ],
-            "D": [ 29 ],
-            "Q": [ 30 ]
-          }
-        },
-        "counter_DFF_Q_14_D_ALU_SUM": {
-          "hide_name": 0,
-          "type": "ALU",
-          "parameters": {
-            "ALU_MODE": "00000000000000000000000000000010"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:22.20-22.34|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:57.7-63.5"
-          },
-          "port_directions": {
-            "CIN": "input",
-            "COUT": "output",
-            "I0": "input",
-            "I1": "input",
-            "I3": "input",
-            "SUM": "output"
-          },
-          "connections": {
-            "CIN": [ 31 ],
-            "COUT": [ 28 ],
-            "I0": [ 18 ],
-            "I1": [ 30 ],
-            "I3": [ 19 ],
-            "SUM": [ 29 ]
-          }
-        },
-        "counter_DFF_Q_15": {
-          "hide_name": 0,
-          "type": "DFF",
-          "parameters": {
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:21.5-23.8|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:13.6-13.47"
-          },
-          "port_directions": {
-            "CLK": "input",
-            "D": "input",
-            "Q": "output"
-          },
-          "connections": {
-            "CLK": [ 9 ],
-            "D": [ 32 ],
-            "Q": [ 33 ]
-          }
-        },
-        "counter_DFF_Q_15_D_ALU_SUM": {
-          "hide_name": 0,
-          "type": "ALU",
-          "parameters": {
-            "ALU_MODE": "00000000000000000000000000000010"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:22.20-22.34|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:57.7-63.5"
-          },
-          "port_directions": {
-            "CIN": "input",
-            "COUT": "output",
-            "I0": "input",
-            "I1": "input",
-            "I3": "input",
-            "SUM": "output"
-          },
-          "connections": {
-            "CIN": [ 34 ],
-            "COUT": [ 31 ],
-            "I0": [ 18 ],
+            "COUT": [ 32 ],
+            "I0": [ 17 ],
             "I1": [ 33 ],
-            "I3": [ 19 ],
-            "SUM": [ 32 ]
+            "I3": [ 17 ],
+            "SUM": [ 34 ]
           }
         },
-        "counter_DFF_Q_16": {
+        "counter_DFF_Q_7": {
           "hide_name": 0,
           "type": "DFF",
           "parameters": {
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:21.5-23.8|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:13.6-13.47"
+            "src": "c:\\Users\\jmterres\\Downloads\\vhdl\\FPGA_Test\\top.v:22.5-24.8|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:13.6-13.47"
           },
           "port_directions": {
             "CLK": "input",
@@ -18753,413 +18760,10 @@
           "connections": {
             "CLK": [ 9 ],
             "D": [ 35 ],
-            "Q": [ 36 ]
+            "Q": [ 33 ]
           }
         },
-        "counter_DFF_Q_16_D_ALU_SUM": {
-          "hide_name": 0,
-          "type": "ALU",
-          "parameters": {
-            "ALU_MODE": "00000000000000000000000000000010"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:22.20-22.34|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:57.7-63.5"
-          },
-          "port_directions": {
-            "CIN": "input",
-            "COUT": "output",
-            "I0": "input",
-            "I1": "input",
-            "I3": "input",
-            "SUM": "output"
-          },
-          "connections": {
-            "CIN": [ 37 ],
-            "COUT": [ 34 ],
-            "I0": [ 18 ],
-            "I1": [ 36 ],
-            "I3": [ 19 ],
-            "SUM": [ 35 ]
-          }
-        },
-        "counter_DFF_Q_17": {
-          "hide_name": 0,
-          "type": "DFF",
-          "parameters": {
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:21.5-23.8|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:13.6-13.47"
-          },
-          "port_directions": {
-            "CLK": "input",
-            "D": "input",
-            "Q": "output"
-          },
-          "connections": {
-            "CLK": [ 9 ],
-            "D": [ 38 ],
-            "Q": [ 39 ]
-          }
-        },
-        "counter_DFF_Q_17_D_ALU_SUM": {
-          "hide_name": 0,
-          "type": "ALU",
-          "parameters": {
-            "ALU_MODE": "00000000000000000000000000000010"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:22.20-22.34|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:57.7-63.5"
-          },
-          "port_directions": {
-            "CIN": "input",
-            "COUT": "output",
-            "I0": "input",
-            "I1": "input",
-            "I3": "input",
-            "SUM": "output"
-          },
-          "connections": {
-            "CIN": [ 40 ],
-            "COUT": [ 37 ],
-            "I0": [ 18 ],
-            "I1": [ 39 ],
-            "I3": [ 19 ],
-            "SUM": [ 38 ]
-          }
-        },
-        "counter_DFF_Q_18": {
-          "hide_name": 0,
-          "type": "DFF",
-          "parameters": {
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:21.5-23.8|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:13.6-13.47"
-          },
-          "port_directions": {
-            "CLK": "input",
-            "D": "input",
-            "Q": "output"
-          },
-          "connections": {
-            "CLK": [ 9 ],
-            "D": [ 41 ],
-            "Q": [ 42 ]
-          }
-        },
-        "counter_DFF_Q_18_D_ALU_SUM": {
-          "hide_name": 0,
-          "type": "ALU",
-          "parameters": {
-            "ALU_MODE": "00000000000000000000000000000010"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:22.20-22.34|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:57.7-63.5"
-          },
-          "port_directions": {
-            "CIN": "input",
-            "COUT": "output",
-            "I0": "input",
-            "I1": "input",
-            "I3": "input",
-            "SUM": "output"
-          },
-          "connections": {
-            "CIN": [ 43 ],
-            "COUT": [ 40 ],
-            "I0": [ 18 ],
-            "I1": [ 42 ],
-            "I3": [ 19 ],
-            "SUM": [ 41 ]
-          }
-        },
-        "counter_DFF_Q_19": {
-          "hide_name": 0,
-          "type": "DFF",
-          "parameters": {
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:21.5-23.8|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:13.6-13.47"
-          },
-          "port_directions": {
-            "CLK": "input",
-            "D": "input",
-            "Q": "output"
-          },
-          "connections": {
-            "CLK": [ 9 ],
-            "D": [ 44 ],
-            "Q": [ 45 ]
-          }
-        },
-        "counter_DFF_Q_19_D_ALU_SUM": {
-          "hide_name": 0,
-          "type": "ALU",
-          "parameters": {
-            "ALU_MODE": "00000000000000000000000000000010"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:22.20-22.34|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:57.7-63.5"
-          },
-          "port_directions": {
-            "CIN": "input",
-            "COUT": "output",
-            "I0": "input",
-            "I1": "input",
-            "I3": "input",
-            "SUM": "output"
-          },
-          "connections": {
-            "CIN": [ 46 ],
-            "COUT": [ 43 ],
-            "I0": [ 18 ],
-            "I1": [ 45 ],
-            "I3": [ 19 ],
-            "SUM": [ 44 ]
-          }
-        },
-        "counter_DFF_Q_1_D_ALU_SUM": {
-          "hide_name": 0,
-          "type": "ALU",
-          "parameters": {
-            "ALU_MODE": "00000000000000000000000000000010"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:22.20-22.34|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:57.7-63.5"
-          },
-          "port_directions": {
-            "CIN": "input",
-            "COUT": "output",
-            "I0": "input",
-            "I1": "input",
-            "I3": "input",
-            "SUM": "output"
-          },
-          "connections": {
-            "CIN": [ 47 ],
-            "COUT": [ 48 ],
-            "I0": [ 18 ],
-            "I1": [ 13 ],
-            "I3": [ 19 ],
-            "SUM": [ 12 ]
-          }
-        },
-        "counter_DFF_Q_2": {
-          "hide_name": 0,
-          "type": "DFF",
-          "parameters": {
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:21.5-23.8|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:13.6-13.47"
-          },
-          "port_directions": {
-            "CLK": "input",
-            "D": "input",
-            "Q": "output"
-          },
-          "connections": {
-            "CLK": [ 9 ],
-            "D": [ 49 ],
-            "Q": [ 50 ]
-          }
-        },
-        "counter_DFF_Q_20": {
-          "hide_name": 0,
-          "type": "DFF",
-          "parameters": {
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:21.5-23.8|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:13.6-13.47"
-          },
-          "port_directions": {
-            "CLK": "input",
-            "D": "input",
-            "Q": "output"
-          },
-          "connections": {
-            "CLK": [ 9 ],
-            "D": [ 51 ],
-            "Q": [ 52 ]
-          }
-        },
-        "counter_DFF_Q_20_D_ALU_SUM": {
-          "hide_name": 0,
-          "type": "ALU",
-          "parameters": {
-            "ALU_MODE": "00000000000000000000000000000010"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:22.20-22.34|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:57.7-63.5"
-          },
-          "port_directions": {
-            "CIN": "input",
-            "COUT": "output",
-            "I0": "input",
-            "I1": "input",
-            "I3": "input",
-            "SUM": "output"
-          },
-          "connections": {
-            "CIN": [ 53 ],
-            "COUT": [ 46 ],
-            "I0": [ 18 ],
-            "I1": [ 52 ],
-            "I3": [ 19 ],
-            "SUM": [ 51 ]
-          }
-        },
-        "counter_DFF_Q_21": {
-          "hide_name": 0,
-          "type": "DFF",
-          "parameters": {
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:21.5-23.8|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:13.6-13.47"
-          },
-          "port_directions": {
-            "CLK": "input",
-            "D": "input",
-            "Q": "output"
-          },
-          "connections": {
-            "CLK": [ 9 ],
-            "D": [ 54 ],
-            "Q": [ 55 ]
-          }
-        },
-        "counter_DFF_Q_21_D_ALU_SUM": {
-          "hide_name": 0,
-          "type": "ALU",
-          "parameters": {
-            "ALU_MODE": "00000000000000000000000000000010"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:22.20-22.34|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:57.7-63.5"
-          },
-          "port_directions": {
-            "CIN": "input",
-            "COUT": "output",
-            "I0": "input",
-            "I1": "input",
-            "I3": "input",
-            "SUM": "output"
-          },
-          "connections": {
-            "CIN": [ 56 ],
-            "COUT": [ 53 ],
-            "I0": [ 18 ],
-            "I1": [ 55 ],
-            "I3": [ 19 ],
-            "SUM": [ 54 ]
-          }
-        },
-        "counter_DFF_Q_22": {
-          "hide_name": 0,
-          "type": "DFF",
-          "parameters": {
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:21.5-23.8|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:13.6-13.47"
-          },
-          "port_directions": {
-            "CLK": "input",
-            "D": "input",
-            "Q": "output"
-          },
-          "connections": {
-            "CLK": [ 9 ],
-            "D": [ 57 ],
-            "Q": [ 58 ]
-          }
-        },
-        "counter_DFF_Q_22_D_ALU_SUM": {
-          "hide_name": 0,
-          "type": "ALU",
-          "parameters": {
-            "ALU_MODE": "00000000000000000000000000000010"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:22.20-22.34|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:57.7-63.5"
-          },
-          "port_directions": {
-            "CIN": "input",
-            "COUT": "output",
-            "I0": "input",
-            "I1": "input",
-            "I3": "input",
-            "SUM": "output"
-          },
-          "connections": {
-            "CIN": [ 59 ],
-            "COUT": [ 56 ],
-            "I0": [ 18 ],
-            "I1": [ 58 ],
-            "I3": [ 19 ],
-            "SUM": [ 57 ]
-          }
-        },
-        "counter_DFF_Q_22_D_ALU_SUM_CIN_ALU_COUT": {
-          "hide_name": 0,
-          "type": "ALU",
-          "parameters": {
-            "ALU_MODE": "00000000000000000000000000000010"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:22.20-22.34|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:57.7-63.5"
-          },
-          "port_directions": {
-            "CIN": "input",
-            "COUT": "output",
-            "I0": "input",
-            "I1": "input",
-            "I3": "input",
-            "SUM": "output"
-          },
-          "connections": {
-            "CIN": [ 18 ],
-            "COUT": [ 59 ],
-            "I0": [ 19 ],
-            "I1": [ 60 ],
-            "I3": [ 19 ],
-            "SUM": [ 61 ]
-          }
-        },
-        "counter_DFF_Q_23": {
-          "hide_name": 0,
-          "type": "DFF",
-          "parameters": {
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:21.5-23.8|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:13.6-13.47"
-          },
-          "port_directions": {
-            "CLK": "input",
-            "D": "input",
-            "Q": "output"
-          },
-          "connections": {
-            "CLK": [ 9 ],
-            "D": [ 62 ],
-            "Q": [ 60 ]
-          }
-        },
-        "counter_DFF_Q_23_D_LUT1_F": {
+        "counter_DFF_Q_7_D_LUT1_F": {
           "hide_name": 0,
           "type": "LUT1",
           "parameters": {
@@ -19174,364 +18778,8 @@
             "I0": "input"
           },
           "connections": {
-            "F": [ 62 ],
-            "I0": [ 60 ]
-          }
-        },
-        "counter_DFF_Q_2_D_ALU_SUM": {
-          "hide_name": 0,
-          "type": "ALU",
-          "parameters": {
-            "ALU_MODE": "00000000000000000000000000000010"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:22.20-22.34|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:57.7-63.5"
-          },
-          "port_directions": {
-            "CIN": "input",
-            "COUT": "output",
-            "I0": "input",
-            "I1": "input",
-            "I3": "input",
-            "SUM": "output"
-          },
-          "connections": {
-            "CIN": [ 63 ],
-            "COUT": [ 47 ],
-            "I0": [ 18 ],
-            "I1": [ 50 ],
-            "I3": [ 19 ],
-            "SUM": [ 49 ]
-          }
-        },
-        "counter_DFF_Q_3": {
-          "hide_name": 0,
-          "type": "DFF",
-          "parameters": {
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:21.5-23.8|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:13.6-13.47"
-          },
-          "port_directions": {
-            "CLK": "input",
-            "D": "input",
-            "Q": "output"
-          },
-          "connections": {
-            "CLK": [ 9 ],
-            "D": [ 64 ],
-            "Q": [ 65 ]
-          }
-        },
-        "counter_DFF_Q_3_D_ALU_SUM": {
-          "hide_name": 0,
-          "type": "ALU",
-          "parameters": {
-            "ALU_MODE": "00000000000000000000000000000010"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:22.20-22.34|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:57.7-63.5"
-          },
-          "port_directions": {
-            "CIN": "input",
-            "COUT": "output",
-            "I0": "input",
-            "I1": "input",
-            "I3": "input",
-            "SUM": "output"
-          },
-          "connections": {
-            "CIN": [ 66 ],
-            "COUT": [ 63 ],
-            "I0": [ 18 ],
-            "I1": [ 65 ],
-            "I3": [ 19 ],
-            "SUM": [ 64 ]
-          }
-        },
-        "counter_DFF_Q_4": {
-          "hide_name": 0,
-          "type": "DFF",
-          "parameters": {
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:21.5-23.8|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:13.6-13.47"
-          },
-          "port_directions": {
-            "CLK": "input",
-            "D": "input",
-            "Q": "output"
-          },
-          "connections": {
-            "CLK": [ 9 ],
-            "D": [ 67 ],
-            "Q": [ 68 ]
-          }
-        },
-        "counter_DFF_Q_4_D_ALU_SUM": {
-          "hide_name": 0,
-          "type": "ALU",
-          "parameters": {
-            "ALU_MODE": "00000000000000000000000000000010"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:22.20-22.34|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:57.7-63.5"
-          },
-          "port_directions": {
-            "CIN": "input",
-            "COUT": "output",
-            "I0": "input",
-            "I1": "input",
-            "I3": "input",
-            "SUM": "output"
-          },
-          "connections": {
-            "CIN": [ 69 ],
-            "COUT": [ 66 ],
-            "I0": [ 18 ],
-            "I1": [ 68 ],
-            "I3": [ 19 ],
-            "SUM": [ 67 ]
-          }
-        },
-        "counter_DFF_Q_5": {
-          "hide_name": 0,
-          "type": "DFF",
-          "parameters": {
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:21.5-23.8|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:13.6-13.47"
-          },
-          "port_directions": {
-            "CLK": "input",
-            "D": "input",
-            "Q": "output"
-          },
-          "connections": {
-            "CLK": [ 9 ],
-            "D": [ 70 ],
-            "Q": [ 71 ]
-          }
-        },
-        "counter_DFF_Q_5_D_ALU_SUM": {
-          "hide_name": 0,
-          "type": "ALU",
-          "parameters": {
-            "ALU_MODE": "00000000000000000000000000000010"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:22.20-22.34|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:57.7-63.5"
-          },
-          "port_directions": {
-            "CIN": "input",
-            "COUT": "output",
-            "I0": "input",
-            "I1": "input",
-            "I3": "input",
-            "SUM": "output"
-          },
-          "connections": {
-            "CIN": [ 72 ],
-            "COUT": [ 69 ],
-            "I0": [ 18 ],
-            "I1": [ 71 ],
-            "I3": [ 19 ],
-            "SUM": [ 70 ]
-          }
-        },
-        "counter_DFF_Q_6": {
-          "hide_name": 0,
-          "type": "DFF",
-          "parameters": {
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:21.5-23.8|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:13.6-13.47"
-          },
-          "port_directions": {
-            "CLK": "input",
-            "D": "input",
-            "Q": "output"
-          },
-          "connections": {
-            "CLK": [ 9 ],
-            "D": [ 73 ],
-            "Q": [ 74 ]
-          }
-        },
-        "counter_DFF_Q_6_D_ALU_SUM": {
-          "hide_name": 0,
-          "type": "ALU",
-          "parameters": {
-            "ALU_MODE": "00000000000000000000000000000010"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:22.20-22.34|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:57.7-63.5"
-          },
-          "port_directions": {
-            "CIN": "input",
-            "COUT": "output",
-            "I0": "input",
-            "I1": "input",
-            "I3": "input",
-            "SUM": "output"
-          },
-          "connections": {
-            "CIN": [ 75 ],
-            "COUT": [ 72 ],
-            "I0": [ 18 ],
-            "I1": [ 74 ],
-            "I3": [ 19 ],
-            "SUM": [ 73 ]
-          }
-        },
-        "counter_DFF_Q_7": {
-          "hide_name": 0,
-          "type": "DFF",
-          "parameters": {
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:21.5-23.8|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:13.6-13.47"
-          },
-          "port_directions": {
-            "CLK": "input",
-            "D": "input",
-            "Q": "output"
-          },
-          "connections": {
-            "CLK": [ 9 ],
-            "D": [ 76 ],
-            "Q": [ 77 ]
-          }
-        },
-        "counter_DFF_Q_7_D_ALU_SUM": {
-          "hide_name": 0,
-          "type": "ALU",
-          "parameters": {
-            "ALU_MODE": "00000000000000000000000000000010"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:22.20-22.34|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:57.7-63.5"
-          },
-          "port_directions": {
-            "CIN": "input",
-            "COUT": "output",
-            "I0": "input",
-            "I1": "input",
-            "I3": "input",
-            "SUM": "output"
-          },
-          "connections": {
-            "CIN": [ 78 ],
-            "COUT": [ 75 ],
-            "I0": [ 18 ],
-            "I1": [ 77 ],
-            "I3": [ 19 ],
-            "SUM": [ 76 ]
-          }
-        },
-        "counter_DFF_Q_8": {
-          "hide_name": 0,
-          "type": "DFF",
-          "parameters": {
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:21.5-23.8|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:13.6-13.47"
-          },
-          "port_directions": {
-            "CLK": "input",
-            "D": "input",
-            "Q": "output"
-          },
-          "connections": {
-            "CLK": [ 9 ],
-            "D": [ 79 ],
-            "Q": [ 80 ]
-          }
-        },
-        "counter_DFF_Q_8_D_ALU_SUM": {
-          "hide_name": 0,
-          "type": "ALU",
-          "parameters": {
-            "ALU_MODE": "00000000000000000000000000000010"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:22.20-22.34|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:57.7-63.5"
-          },
-          "port_directions": {
-            "CIN": "input",
-            "COUT": "output",
-            "I0": "input",
-            "I1": "input",
-            "I3": "input",
-            "SUM": "output"
-          },
-          "connections": {
-            "CIN": [ 81 ],
-            "COUT": [ 78 ],
-            "I0": [ 18 ],
-            "I1": [ 80 ],
-            "I3": [ 19 ],
-            "SUM": [ 79 ]
-          }
-        },
-        "counter_DFF_Q_9": {
-          "hide_name": 0,
-          "type": "DFF",
-          "parameters": {
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:21.5-23.8|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:13.6-13.47"
-          },
-          "port_directions": {
-            "CLK": "input",
-            "D": "input",
-            "Q": "output"
-          },
-          "connections": {
-            "CLK": [ 9 ],
-            "D": [ 82 ],
-            "Q": [ 83 ]
-          }
-        },
-        "counter_DFF_Q_9_D_ALU_SUM": {
-          "hide_name": 0,
-          "type": "ALU",
-          "parameters": {
-            "ALU_MODE": "00000000000000000000000000000010"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:22.20-22.34|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:57.7-63.5"
-          },
-          "port_directions": {
-            "CIN": "input",
-            "COUT": "output",
-            "I0": "input",
-            "I1": "input",
-            "I3": "input",
-            "SUM": "output"
-          },
-          "connections": {
-            "CIN": [ 17 ],
-            "COUT": [ 81 ],
-            "I0": [ 18 ],
-            "I1": [ 83 ],
-            "I3": [ 19 ],
-            "SUM": [ 82 ]
+            "F": [ 35 ],
+            "I0": [ 33 ]
           }
         },
         "counter_DFF_Q_D_ALU_SUM": {
@@ -19542,7 +18790,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:22.20-22.34|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:57.7-63.5"
+            "src": "c:\\Users\\jmterres\\Downloads\\vhdl\\FPGA_Test\\top.v:23.20-23.34|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:57.7-63.5"
           },
           "port_directions": {
             "CIN": "input",
@@ -19553,11 +18801,11 @@
             "SUM": "output"
           },
           "connections": {
-            "CIN": [ 48 ],
-            "COUT": [ 84 ],
-            "I0": [ 18 ],
+            "CIN": [ 15 ],
+            "COUT": [ 36 ],
+            "I0": [ 16 ],
             "I1": [ 11 ],
-            "I3": [ 19 ],
+            "I3": [ 17 ],
             "SUM": [ 10 ]
           }
         },
@@ -19572,7 +18820,7 @@
             "G": "output"
           },
           "connections": {
-            "G": [ 18 ]
+            "G": [ 16 ]
           }
         },
         "counter_DFF_Q_D_ALU_SUM_I3_VCC_V": {
@@ -19586,7 +18834,7 @@
             "V": "output"
           },
           "connections": {
-            "V": [ 19 ]
+            "V": [ 17 ]
           }
         },
         "led_OBUF_O": {
@@ -19602,7 +18850,7 @@
             "O": "output"
           },
           "connections": {
-            "I": [ "x" ],
+            "I": [ 11 ],
             "O": [ 8 ]
           }
         },
@@ -19619,7 +18867,7 @@
             "O": "output"
           },
           "connections": {
-            "I": [ 11 ],
+            "I": [ 13 ],
             "O": [ 7 ]
           }
         },
@@ -19636,7 +18884,7 @@
             "O": "output"
           },
           "connections": {
-            "I": [ 13 ],
+            "I": [ 19 ],
             "O": [ 6 ]
           }
         },
@@ -19653,7 +18901,7 @@
             "O": "output"
           },
           "connections": {
-            "I": [ 50 ],
+            "I": [ 22 ],
             "O": [ 5 ]
           }
         },
@@ -19670,7 +18918,7 @@
             "O": "output"
           },
           "connections": {
-            "I": [ 65 ],
+            "I": [ 25 ],
             "O": [ 4 ]
           }
         },
@@ -19687,7 +18935,7 @@
             "O": "output"
           },
           "connections": {
-            "I": [ 68 ],
+            "I": [ 28 ],
             "O": [ 3 ]
           }
         }
@@ -19697,7 +18945,7 @@
           "hide_name": 0,
           "bits": [ 2 ],
           "attributes": {
-            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:9.12-9.15"
+            "src": "c:\\Users\\jmterres\\Downloads\\vhdl\\FPGA_Test\\top.v:9.12-9.15"
           }
         },
         "clk_IBUF_I_O": {
@@ -19708,149 +18956,9 @@
         },
         "counter": {
           "hide_name": 0,
-          "bits": [ 60, 58, 55, 52, 45, 42, 39, 36, 33, 30, 27, 24, 21, 15, 83, 80, 77, 74, 71, 68, 65, 50, 13, 11 ],
+          "bits": [ 33, 31, 28, 25, 22, 19, 13, 11 ],
           "attributes": {
-            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:19.29-19.36"
-          }
-        },
-        "counter_DFF_Q_10_D": {
-          "hide_name": 0,
-          "bits": [ 14 ],
-          "attributes": {
-          }
-        },
-        "counter_DFF_Q_10_D_ALU_SUM_COUT": {
-          "hide_name": 0,
-          "bits": [ 17 ],
-          "attributes": {
-            "abc9_carry": "00000000000000000000000000000001",
-            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:22.20-22.34|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:57.7-63.5|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_sim.v:938.25-938.29"
-          }
-        },
-        "counter_DFF_Q_11_D": {
-          "hide_name": 0,
-          "bits": [ 20 ],
-          "attributes": {
-          }
-        },
-        "counter_DFF_Q_11_D_ALU_SUM_COUT": {
-          "hide_name": 0,
-          "bits": [ 16 ],
-          "attributes": {
-            "abc9_carry": "00000000000000000000000000000001",
-            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:22.20-22.34|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:57.7-63.5|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_sim.v:938.25-938.29"
-          }
-        },
-        "counter_DFF_Q_12_D": {
-          "hide_name": 0,
-          "bits": [ 23 ],
-          "attributes": {
-          }
-        },
-        "counter_DFF_Q_12_D_ALU_SUM_COUT": {
-          "hide_name": 0,
-          "bits": [ 22 ],
-          "attributes": {
-            "abc9_carry": "00000000000000000000000000000001",
-            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:22.20-22.34|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:57.7-63.5|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_sim.v:938.25-938.29"
-          }
-        },
-        "counter_DFF_Q_13_D": {
-          "hide_name": 0,
-          "bits": [ 26 ],
-          "attributes": {
-          }
-        },
-        "counter_DFF_Q_13_D_ALU_SUM_COUT": {
-          "hide_name": 0,
-          "bits": [ 25 ],
-          "attributes": {
-            "abc9_carry": "00000000000000000000000000000001",
-            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:22.20-22.34|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:57.7-63.5|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_sim.v:938.25-938.29"
-          }
-        },
-        "counter_DFF_Q_14_D": {
-          "hide_name": 0,
-          "bits": [ 29 ],
-          "attributes": {
-          }
-        },
-        "counter_DFF_Q_14_D_ALU_SUM_COUT": {
-          "hide_name": 0,
-          "bits": [ 28 ],
-          "attributes": {
-            "abc9_carry": "00000000000000000000000000000001",
-            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:22.20-22.34|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:57.7-63.5|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_sim.v:938.25-938.29"
-          }
-        },
-        "counter_DFF_Q_15_D": {
-          "hide_name": 0,
-          "bits": [ 32 ],
-          "attributes": {
-          }
-        },
-        "counter_DFF_Q_15_D_ALU_SUM_COUT": {
-          "hide_name": 0,
-          "bits": [ 31 ],
-          "attributes": {
-            "abc9_carry": "00000000000000000000000000000001",
-            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:22.20-22.34|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:57.7-63.5|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_sim.v:938.25-938.29"
-          }
-        },
-        "counter_DFF_Q_16_D": {
-          "hide_name": 0,
-          "bits": [ 35 ],
-          "attributes": {
-          }
-        },
-        "counter_DFF_Q_16_D_ALU_SUM_COUT": {
-          "hide_name": 0,
-          "bits": [ 34 ],
-          "attributes": {
-            "abc9_carry": "00000000000000000000000000000001",
-            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:22.20-22.34|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:57.7-63.5|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_sim.v:938.25-938.29"
-          }
-        },
-        "counter_DFF_Q_17_D": {
-          "hide_name": 0,
-          "bits": [ 38 ],
-          "attributes": {
-          }
-        },
-        "counter_DFF_Q_17_D_ALU_SUM_COUT": {
-          "hide_name": 0,
-          "bits": [ 37 ],
-          "attributes": {
-            "abc9_carry": "00000000000000000000000000000001",
-            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:22.20-22.34|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:57.7-63.5|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_sim.v:938.25-938.29"
-          }
-        },
-        "counter_DFF_Q_18_D": {
-          "hide_name": 0,
-          "bits": [ 41 ],
-          "attributes": {
-          }
-        },
-        "counter_DFF_Q_18_D_ALU_SUM_COUT": {
-          "hide_name": 0,
-          "bits": [ 40 ],
-          "attributes": {
-            "abc9_carry": "00000000000000000000000000000001",
-            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:22.20-22.34|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:57.7-63.5|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_sim.v:938.25-938.29"
-          }
-        },
-        "counter_DFF_Q_19_D": {
-          "hide_name": 0,
-          "bits": [ 44 ],
-          "attributes": {
-          }
-        },
-        "counter_DFF_Q_19_D_ALU_SUM_COUT": {
-          "hide_name": 0,
-          "bits": [ 43 ],
-          "attributes": {
-            "abc9_carry": "00000000000000000000000000000001",
-            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:22.20-22.34|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:57.7-63.5|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_sim.v:938.25-938.29"
+            "src": "c:\\Users\\jmterres\\Downloads\\vhdl\\FPGA_Test\\top.v:20.29-20.36"
           }
         },
         "counter_DFF_Q_1_D": {
@@ -19861,185 +18969,101 @@
         },
         "counter_DFF_Q_1_D_ALU_SUM_COUT": {
           "hide_name": 0,
-          "bits": [ 48 ],
+          "bits": [ 15 ],
           "attributes": {
             "abc9_carry": "00000000000000000000000000000001",
-            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:22.20-22.34|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:57.7-63.5|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_sim.v:938.25-938.29"
-          }
-        },
-        "counter_DFF_Q_20_D": {
-          "hide_name": 0,
-          "bits": [ 51 ],
-          "attributes": {
-          }
-        },
-        "counter_DFF_Q_20_D_ALU_SUM_COUT": {
-          "hide_name": 0,
-          "bits": [ 46 ],
-          "attributes": {
-            "abc9_carry": "00000000000000000000000000000001",
-            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:22.20-22.34|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:57.7-63.5|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_sim.v:938.25-938.29"
-          }
-        },
-        "counter_DFF_Q_21_D": {
-          "hide_name": 0,
-          "bits": [ 54 ],
-          "attributes": {
-          }
-        },
-        "counter_DFF_Q_21_D_ALU_SUM_COUT": {
-          "hide_name": 0,
-          "bits": [ 53 ],
-          "attributes": {
-            "abc9_carry": "00000000000000000000000000000001",
-            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:22.20-22.34|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:57.7-63.5|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_sim.v:938.25-938.29"
-          }
-        },
-        "counter_DFF_Q_22_D": {
-          "hide_name": 0,
-          "bits": [ 57 ],
-          "attributes": {
-          }
-        },
-        "counter_DFF_Q_22_D_ALU_SUM_CIN": {
-          "hide_name": 0,
-          "bits": [ 59 ],
-          "attributes": {
-            "abc9_carry": "00000000000000000000000000000001",
-            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:22.20-22.34|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:57.7-63.5|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_sim.v:938.25-938.29"
-          }
-        },
-        "counter_DFF_Q_22_D_ALU_SUM_CIN_ALU_COUT_SUM": {
-          "hide_name": 0,
-          "bits": [ 61 ],
-          "attributes": {
-            "unused_bits": "0 "
-          }
-        },
-        "counter_DFF_Q_22_D_ALU_SUM_COUT": {
-          "hide_name": 0,
-          "bits": [ 56 ],
-          "attributes": {
-            "abc9_carry": "00000000000000000000000000000001",
-            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:22.20-22.34|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:57.7-63.5|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_sim.v:938.25-938.29"
-          }
-        },
-        "counter_DFF_Q_23_D": {
-          "hide_name": 0,
-          "bits": [ 62 ],
-          "attributes": {
+            "src": "c:\\Users\\jmterres\\Downloads\\vhdl\\FPGA_Test\\top.v:23.20-23.34|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:57.7-63.5|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_sim.v:938.25-938.29"
           }
         },
         "counter_DFF_Q_2_D": {
           "hide_name": 0,
-          "bits": [ 49 ],
+          "bits": [ 18 ],
           "attributes": {
           }
         },
         "counter_DFF_Q_2_D_ALU_SUM_COUT": {
           "hide_name": 0,
-          "bits": [ 47 ],
+          "bits": [ 14 ],
           "attributes": {
             "abc9_carry": "00000000000000000000000000000001",
-            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:22.20-22.34|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:57.7-63.5|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_sim.v:938.25-938.29"
+            "src": "c:\\Users\\jmterres\\Downloads\\vhdl\\FPGA_Test\\top.v:23.20-23.34|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:57.7-63.5|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_sim.v:938.25-938.29"
           }
         },
         "counter_DFF_Q_3_D": {
           "hide_name": 0,
-          "bits": [ 64 ],
+          "bits": [ 21 ],
           "attributes": {
           }
         },
         "counter_DFF_Q_3_D_ALU_SUM_COUT": {
           "hide_name": 0,
-          "bits": [ 63 ],
+          "bits": [ 20 ],
           "attributes": {
             "abc9_carry": "00000000000000000000000000000001",
-            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:22.20-22.34|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:57.7-63.5|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_sim.v:938.25-938.29"
+            "src": "c:\\Users\\jmterres\\Downloads\\vhdl\\FPGA_Test\\top.v:23.20-23.34|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:57.7-63.5|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_sim.v:938.25-938.29"
           }
         },
         "counter_DFF_Q_4_D": {
           "hide_name": 0,
-          "bits": [ 67 ],
+          "bits": [ 24 ],
           "attributes": {
           }
         },
         "counter_DFF_Q_4_D_ALU_SUM_COUT": {
           "hide_name": 0,
-          "bits": [ 66 ],
+          "bits": [ 23 ],
           "attributes": {
             "abc9_carry": "00000000000000000000000000000001",
-            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:22.20-22.34|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:57.7-63.5|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_sim.v:938.25-938.29"
+            "src": "c:\\Users\\jmterres\\Downloads\\vhdl\\FPGA_Test\\top.v:23.20-23.34|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:57.7-63.5|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_sim.v:938.25-938.29"
           }
         },
         "counter_DFF_Q_5_D": {
           "hide_name": 0,
-          "bits": [ 70 ],
+          "bits": [ 27 ],
           "attributes": {
           }
         },
         "counter_DFF_Q_5_D_ALU_SUM_COUT": {
           "hide_name": 0,
-          "bits": [ 69 ],
+          "bits": [ 26 ],
           "attributes": {
             "abc9_carry": "00000000000000000000000000000001",
-            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:22.20-22.34|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:57.7-63.5|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_sim.v:938.25-938.29"
+            "src": "c:\\Users\\jmterres\\Downloads\\vhdl\\FPGA_Test\\top.v:23.20-23.34|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:57.7-63.5|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_sim.v:938.25-938.29"
           }
         },
         "counter_DFF_Q_6_D": {
           "hide_name": 0,
-          "bits": [ 73 ],
+          "bits": [ 30 ],
           "attributes": {
+          }
+        },
+        "counter_DFF_Q_6_D_ALU_SUM_CIN": {
+          "hide_name": 0,
+          "bits": [ 32 ],
+          "attributes": {
+            "abc9_carry": "00000000000000000000000000000001",
+            "src": "c:\\Users\\jmterres\\Downloads\\vhdl\\FPGA_Test\\top.v:23.20-23.34|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:57.7-63.5|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_sim.v:938.25-938.29"
+          }
+        },
+        "counter_DFF_Q_6_D_ALU_SUM_CIN_ALU_COUT_SUM": {
+          "hide_name": 0,
+          "bits": [ 34 ],
+          "attributes": {
+            "unused_bits": "0 "
           }
         },
         "counter_DFF_Q_6_D_ALU_SUM_COUT": {
           "hide_name": 0,
-          "bits": [ 72 ],
+          "bits": [ 29 ],
           "attributes": {
             "abc9_carry": "00000000000000000000000000000001",
-            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:22.20-22.34|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:57.7-63.5|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_sim.v:938.25-938.29"
+            "src": "c:\\Users\\jmterres\\Downloads\\vhdl\\FPGA_Test\\top.v:23.20-23.34|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:57.7-63.5|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_sim.v:938.25-938.29"
           }
         },
         "counter_DFF_Q_7_D": {
           "hide_name": 0,
-          "bits": [ 76 ],
+          "bits": [ 35 ],
           "attributes": {
-          }
-        },
-        "counter_DFF_Q_7_D_ALU_SUM_COUT": {
-          "hide_name": 0,
-          "bits": [ 75 ],
-          "attributes": {
-            "abc9_carry": "00000000000000000000000000000001",
-            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:22.20-22.34|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:57.7-63.5|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_sim.v:938.25-938.29"
-          }
-        },
-        "counter_DFF_Q_8_D": {
-          "hide_name": 0,
-          "bits": [ 79 ],
-          "attributes": {
-          }
-        },
-        "counter_DFF_Q_8_D_ALU_SUM_COUT": {
-          "hide_name": 0,
-          "bits": [ 78 ],
-          "attributes": {
-            "abc9_carry": "00000000000000000000000000000001",
-            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:22.20-22.34|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:57.7-63.5|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_sim.v:938.25-938.29"
-          }
-        },
-        "counter_DFF_Q_9_D": {
-          "hide_name": 0,
-          "bits": [ 82 ],
-          "attributes": {
-          }
-        },
-        "counter_DFF_Q_9_D_ALU_SUM_COUT": {
-          "hide_name": 0,
-          "bits": [ 81 ],
-          "attributes": {
-            "abc9_carry": "00000000000000000000000000000001",
-            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:22.20-22.34|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:57.7-63.5|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_sim.v:938.25-938.29"
           }
         },
         "counter_DFF_Q_D": {
@@ -20050,22 +19074,22 @@
         },
         "counter_DFF_Q_D_ALU_SUM_COUT": {
           "hide_name": 0,
-          "bits": [ 84 ],
+          "bits": [ 36 ],
           "attributes": {
             "abc9_carry": "00000000000000000000000000000001",
-            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:22.20-22.34|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:57.7-63.5|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_sim.v:938.25-938.29",
+            "src": "c:\\Users\\jmterres\\Downloads\\vhdl\\FPGA_Test\\top.v:23.20-23.34|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:57.7-63.5|c:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_sim.v:938.25-938.29",
             "unused_bits": "0 "
           }
         },
         "counter_DFF_Q_D_ALU_SUM_I0": {
           "hide_name": 0,
-          "bits": [ 18 ],
+          "bits": [ 16 ],
           "attributes": {
           }
         },
         "counter_DFF_Q_D_ALU_SUM_I3": {
           "hide_name": 0,
-          "bits": [ 19 ],
+          "bits": [ 17 ],
           "attributes": {
           }
         },
@@ -20073,7 +19097,7 @@
           "hide_name": 0,
           "bits": [ 3, 4, 5, 6, 7, 8 ],
           "attributes": {
-            "src": "c:\\Users\\jmterres\\Downloads\\FPGA_Test\\top.v:10.18-10.21"
+            "src": "c:\\Users\\jmterres\\Downloads\\vhdl\\FPGA_Test\\top.v:10.18-10.21"
           }
         }
       }

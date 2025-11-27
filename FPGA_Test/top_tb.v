@@ -1,9 +1,9 @@
 `timescale 1ns/1ps
 
-// test.tsb - simple testbench for top.v
-// Simulates the `top` module for 3 seconds and writes a VCD file (test.vcd).
+// test.tb - fixed testbench for top.v
+// Simulates the `top` module for a short time and writes a VCD file (test.vcd).
 
-module tb_top;
+module test;
     // Testbench clock and DUT wires
     reg clk;
     wire [5:0] led;
@@ -15,20 +15,20 @@ module tb_top;
     );
 
     // Clock generation: use 27 MHz clock
-    // Period = 1e9 ns / 27e6 = ~37.037037 ns
-    real PERIOD_NS = 1000000000.0 / 27000000.0; // ns
-    real HALF = PERIOD_NS / 2.0;
+    // Period ~= 37 ns (integer ns)
+    localparam integer PERIOD_NS = 1000000000 / 27000000; // ns (integer)
+    localparam integer HALF = PERIOD_NS / 2;
 
     initial begin
         clk = 0;
         forever #(HALF) clk = ~clk;
     end
 
-    // Run simulation for 3 seconds
+    // Run simulation for a short time
     initial begin
         $display("Starting simulation at %0t ns", $time);
         $dumpfile("test.vcd");
-        $dumpvars(0, tb_top);
+        $dumpvars(0, test);
         $monitor("%0t ns : clk=%b led=%b", $time, clk, led);
 
         // 10 us = 10_000 ns
