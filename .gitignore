@@ -1,42 +1,27 @@
-# Ignore common build artifacts and temporary files for VHDL/FPGA projects
-
-# Simulation outputs
+# generated waveforms / simulation files
 *.vcd
-*.vcd.gz
 *.vvp
+*.fst
+*.vzt
+*.lxt
 
-# Synth / place-and-route outputs
-*.bit
-*.bin
-*.svf
-*.edf
-*_pnr.json
-*.syn.json
+# yosys / synthesis outputs
+*.il
+*.dot
+*.svg
+schematic*.*
+rtl*.*
+synth*.*
+*.blif
 
-# Logs, reports, and journals
+# tool / build artifacts
+*.json         # NOTE: if you have important JSON configs committed, use more specific names
 *.log
-*.rpt
-*.jou
-
-# Object / build files
 *.o
-*.a
-*.so
-*.d
-build/
-out/
-build-*/
-sim_build/
+*.exe
 
-# Temporary and editor files
-*.tmp
-*.bak
-*.cache
+# editor / OS
 .vscode/
 *.swp
-*.swo
 Thumbs.db
 .DS_Store
-
-# Misc
-*.wdb
